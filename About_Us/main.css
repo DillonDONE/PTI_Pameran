@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url("../Animasi_and_Picture/main3.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#judul {
+    margin-left: 10px;
+}
+
+.navi {
+    background: rgba(51, 49, 48, 0.3);
+}
+
+.link {
+    padding-left: 6.5px;
+    padding-right: 6.5px;
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: white;
+    border-bottom: 1.5px solid white;
+    transition: ease-in-out .1s;
+}
+
+#content {
+    margin-top: 125px;
+}
