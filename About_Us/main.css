@@ -2,7 +2,8 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-image: url("../Animasi_and_Picture/bkgp.jpg.jpg");
+    position: center;
+    background-image: url("../Animasi_and_Picture/gmbr.jpg.jpg");
     background-size: contain;
     background-repeat: no-repeat;
 }
