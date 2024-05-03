@@ -1,66 +1,24 @@
 .navi {
     background: rgba(51, 49, 48, 0.3);
     position: fixed;
-    top: 0;
     width: 100%;
-    z-index: 1000; 
-}
-
-body {
-    margin: 0;
-    padding: 0;
 }
 
 #kepala {
-    height: 100vh;
+    height: 70vh;
     background-image: url("../Animasi_and_Picture/main3.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-attachment:fixed;
-}
-
-#judul {
-    margin-left: 10px;
-}
-
-.link {
-    padding-left: 6.5px;
-    padding-right: 6.5px;
-    color: white;
-    text-decoration: none;
-}
-
-.link:hover {
-    color: white;
-    border-bottom: 1.5px solid white;
-    transition: ease-in-out .1s;
-}
-
-#content {
-    margin-top: 360px;
-    position:fixed;
-    width: 100%;
-    height: 100vh;
-    overflow:scroll;
-}
-
-#artikel {
-    top: 20px;
-    left: 20px;
-    padding: 20px;
-    border-radius: 8px;
-    width: 300px;
-    max-width: 90%;
+    background-size: cover;
+    background-position: center;
 }
 
 #judulArtikel {
-    color: black;
+    margin-top: 2rem;
+    margin-left: 2rem;
 }
 
-@media screen and (max-width: 600px) {
-    #artikel {
-        width: 90%;
-        max-width: none;
-        left: 5%;
+@media (max-width: 768px) {
+    #judulArtikel {
+        margin-top: 4rem;
+        margin-left: 1rem;
     }
 }
