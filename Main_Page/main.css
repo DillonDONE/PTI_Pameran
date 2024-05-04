@@ -11,14 +11,78 @@
     background-position: center;
 }
 
-#judulArtikel {
+.konten {
     margin-top: 2rem;
-    margin-left: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.boxrekom {
+    border-radius: 5px;
+    padding: 4rem;
+    margin: 12px;
+    cursor: pointer;
+}
+
+.boxrekom:hover {
+    transform: scale(1.2);
+}
+
+.capt {
+    color: whitesmoke;
+    transform: translateY(65px);
 }
 
 @media (max-width: 768px) {
-    #judulArtikel {
-        margin-top: 4rem;
-        margin-left: 1rem;
+    .boxrekom {
+        padding: 2rem;
     }
+}
+
+#rek1 {
+    background-image: url("https://www.tempatwisata.pro/users_media/3064/pulau-lampu_1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#rek1:hover {
+    transition: ease-in-out .2s;
+}
+
+#rek1:not(:hover) {
+    transition: ease-in-out .2s;
+}
+
+
+#rek2 {
+    background-image: url("https://asset-2.tstatic.net/belitung/foto/bank/images/20230927-Pantai-Tanjung-Kelayang-Belitung.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#rek2:hover {
+    transition: ease-in-out .2s;
+}
+
+#rek2:not(:hover) {
+    transition: ease-in-out .2s;
+}
+
+#rek3 {
+    background-image: url("https://img.okezone.com/content/2023/07/18/408/2848383/7-pantai-cantik-yang-wajib-dikunjungi-di-pulau-bangka-bikin-ogah-pulang-fLScKnV4Sm.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#rek3:hover {
+    transition: ease-in-out .2s;
+}
+
+#rek3:not(:hover) {
+    transition: ease-in-out .2s;
 }
