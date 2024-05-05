@@ -1,3 +1,4 @@
+
 .navi {
     background: rgba(51, 49, 48, 0.3);
     position: fixed;
@@ -33,13 +34,15 @@
     object-fit: cover;
 }
 
-
 .konten {
     margin-top: 2rem; 
     padding: 10px;
     border-radius: 5px;
 }
 
+.map-container {
+    margin-left: 10px;
+}
 
 .boxrekom {
     border-radius: 5px;
@@ -53,8 +56,9 @@
 }
 
 .capt {
-    color: whitesmoke;
+    color: rgb(255, 255, 255);
     transform: translateY(65px);
+    text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -80,7 +84,7 @@
 
 
 #rek2 {
-    background-image: url("https://asset-2.tstatic.net/belitung/foto/bank/images/20230927-Pantai-Tanjung-Kelayang-Belitung.jpg");
+    background-image: url("https://radarbanyumas.disway.id/upload/db2871ad0cc47729c3057a456c31704b.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -111,7 +115,7 @@
 }
 
 #rekmak1 {
-    background-image: url("https://img.okezone.com/content/2016/01/02/298/1279452/mengenal-lempah-kuning-khas-bangka-belitung-rTOBu40Ic4.jpg");
+    background-image: url("https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/p1/103/2024/01/24/lempah-Kuning-Khas-Bangka-Belitung-629108236.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -127,7 +131,7 @@
 
 
 #rekmak2 {
-    background-image: url("https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/akurat/images/2023/01/big/img_63be1040b87463-30762885-95301142.jpg");
+    background-image: url("https://nibble-images.b-cdn.net/nibble/original_images/Mie-bangka-pesona-travel.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -155,4 +159,44 @@
 
 #rekmak3:not(:hover) {
     transition: ease-in-out .2s;
+}
+
+#kaki {
+    background-color: grey;
+    align-items: center;
+    text-align: center;
+    padding-top: 15px;
+    margin-top: ;
+}
+
+#copy {
+    background-color: rgb(49, 48, 48);
+    color: white;
+    font-weight: 75;
+    text-align: center;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+#kaki div a{
+    padding-left: 10px;
+}
+
+.icon {
+    filter: grayscale(1);
+    border-radius: 30px;
+    height: 50px;
+    width: 50px;
+}
+
+.icon:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+    transition: ease-in .1s;
+}
+
+.icon:not(:hover) {
+    filter: grayscale(1);
+    transform: scale(1);
+    transition: ease-in .1s;
 }
