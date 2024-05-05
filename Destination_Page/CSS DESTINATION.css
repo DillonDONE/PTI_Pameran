@@ -3,7 +3,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f8f9fa; /* Warna latar belakang */
+    background-color: #f8f9fa;
+    /* Warna latar belakang */
 }
 
 header {
@@ -15,8 +16,10 @@ header {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 kolom */
-    grid-gap: 20px; /* Jarak antar gambar */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 kolom */
+    grid-gap: 20px;
+    /* Jarak antar gambar */
     padding: 20px;
 }
 
@@ -27,15 +30,21 @@ header {
 }
 
 .photo img {
-    width: 100%; /* Gambar mengisi seluruh area div.photo */
-    height: auto; /* Mengikuti proporsi asli gambar */
-    max-width: 4cm; /* Lebar maksimum gambar */
-    max-height: 4cm; /* Tinggi maksimum gambar */
-    transition: transform 0.2s ease; /* Animasi scaling saat hover */
+    width: 100%;
+    /* Gambar mengisi seluruh area div.photo */
+    height: auto;
+    /* Mengikuti proporsi asli gambar */
+    max-width: 4cm;
+    /* Lebar maksimum gambar */
+    max-height: 4cm;
+    /* Tinggi maksimum gambar */
+    transition: transform 0.2s ease;
+    /* Animasi scaling saat hover */
 }
 
 .photo:hover img {
-    transform: scale(1.1); /* Memperbesar gambar saat hover */
+    transform: scale(1.1);
+    /* Memperbesar gambar saat hover */
 }
 
 footer {
