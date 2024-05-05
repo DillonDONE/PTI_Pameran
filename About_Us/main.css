@@ -1,145 +1,54 @@
-body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-image: url("../Animasi_and_Picture/gmbr.jpg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#judul {
-    margin-left: 10px;
-}
-
 .navi {
     background: rgba(51, 49, 48, 0.3);
-}
-
-.link {
-    padding-left: 6.5px;
-    padding-right: 6.5px;
-    color: white;
-    text-decoration: none;
-}
-
-.link:hover {
-    color: white;
-    border-bottom: 1.5px solid white;
-    transition: ease-in-out .1s;
-}
-
-#content {
-    margin-top: 125px;
-}
-
-footer {
-    /* Memberikan warna latar belakang dan tinggi untuk footer */
-    background-color: #333;
-    /* Warna latar belakang hitam */
-    color: #fff;
-    /* Warna teks putih */
-    height: 150px;
-    /* Tinggi footer */
-    /* Menetapkan posisi footer di bagian bawah layar */
     position: fixed;
-    bottom: 0;
     width: 100%;
 }
 
-.scroll-1::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-}
-
-.scroll-1::-webkit-scrollbar-thumb {
-    border-radius: 20px;
-    background: #888;
-}
-
-.container * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    color: #fff;
-}
-
-.container {
-    display: flex;
-    overflow-x: scroll;
-    padding: 24px;
-    width: 300px;
-    scroll-snap-type: x mandatory;
-    scroll-padding-top: 24px;
-    border-radius: 8px;
-    gap: 20px;
-}
-
-.container::-webkit-scrollbar {
-    width: 1px;
-    height: 3px;
-}
-
-.container .card {
-    flex: 0 0 50%;
-    overflow: hidden;
-    border-radius: 8px;
-    background-color: #141414;
-    scroll-snap-align: start;
-}
-
-.card .card__image {
-    flex: 1 2 3 4;
-    height: 140px;
-}
-
-.card:nth-child(1) .card__image {
-    padding-top: 30%;
+#kepala {
+    height: 70vh;
+    background-image: url("../Animasi_and_Picture/theme3.jpg");
+    background-size: cover;
     background-position: center;
-    background-image: url("../Animasi_and_Picture/bangka.jpg.jpg");
 }
 
-.card:nth-child(2) .card__image {
-    background-image: linear-gradient(to right top,
-            #dc09a5,
-            #ce00b4,
-            #ba00c5,
-            #9c00d8,
-            #6f12eb);
+.konten {
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-.card:nth-child(3) .card__image {
-    background-image: linear-gradient(to right top,
-            #dc1009,
-            #e55f00,
-            #e49200,
-            #dac000,
-            #c7eb12);
+.boxrekom {
+    border-radius: 5px;
+    padding: 4rem;
+    margin: 12px;
+    cursor: pointer;
 }
 
-.card:nth-of-type(4) .card__image {
-    background-image: linear-gradient(to right top,
-            #dc1009,
-            #e55f00,
-            #e49200,
-            #dac000,
-            #c7eb12);
+.boxrekom:hover {
+    transform: scale(1.2);
 }
 
+.capt {
+    color: whitesmoke;
+    transform: translateY(65px);
+}
 
-.card .card__content {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+@media (max-width: 768px) {
+    .boxrekom {
+        padding: 2rem;
+    }
+}
+
+.about {
+    display: inline-block;
+    margin-top: 130px;
+    background-color: #666666;
     padding: 20px;
 }
 
-.card .card__content .card__title {
-    font-size: 32px;
-    color: #fff;
-    text-transform: capitalize;
-}
-
-.card .card__content .card__describe {
-    color: #fff;
-    font-size: 16px;
+.imges {
+    width: 150px;
+    height: 200px;
 }
