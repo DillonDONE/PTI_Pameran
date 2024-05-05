@@ -1,22 +1,47 @@
+
 .navi {
     background: rgba(51, 49, 48, 0.3);
     position: fixed;
     width: 100%;
+    z-index: 1000; 
+}
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding-top: 33.9%;
 }
 
-#kepala {
-    height: 70vh;
-    background-image: url("../Animasi_and_Picture/theme3.jpg");
-    background-size: cover;
-    background-position: center;
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .konten {
-    margin-top: 2rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 2rem; 
     padding: 10px;
     border-radius: 5px;
+}
+
+.map-container {
+    margin-left: 10px;
 }
 
 .boxrekom {
@@ -31,8 +56,9 @@
 }
 
 .capt {
-    color: whitesmoke;
+    color: rgb(255, 255, 255);
     transform: translateY(65px);
+    text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -56,8 +82,9 @@
     transition: ease-in-out .2s;
 }
 
+
 #rek2 {
-    background-image: url("https://asset-2.tstatic.net/belitung/foto/bank/images/20230927-Pantai-Tanjung-Kelayang-Belitung.jpg");
+    background-image: url("https://radarbanyumas.disway.id/upload/db2871ad0cc47729c3057a456c31704b.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -70,6 +97,7 @@
 #rek2:not(:hover) {
     transition: ease-in-out .2s;
 }
+
 
 #rek3 {
     background-image: url("https://img.okezone.com/content/2023/07/18/408/2848383/7-pantai-cantik-yang-wajib-dikunjungi-di-pulau-bangka-bikin-ogah-pulang-fLScKnV4Sm.jpg");
@@ -84,4 +112,90 @@
 
 #rek3:not(:hover) {
     transition: ease-in-out .2s;
+}
+
+#rekmak1 {
+    background-image: url("https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/p1/103/2024/01/24/lempah-Kuning-Khas-Bangka-Belitung-629108236.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#rekmak1:hover {
+    transition: ease-in-out .2s;
+}
+
+#rekmak1:not(:hover) {
+    transition: ease-in-out .2s;
+}
+
+
+#rekmak2 {
+    background-image: url("https://nibble-images.b-cdn.net/nibble/original_images/Mie-bangka-pesona-travel.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#rekmak2:hover {
+    transition: ease-in-out .2s;
+}
+
+#rekmak2:not(:hover) {
+    transition: ease-in-out .2s;
+}
+
+
+#rekmak3 {
+    background-image: url("https://cdn0-production-images-kly.akamaized.net/wbtA9GCQOxgLBotzLR0Nvf8YcZE=/0x394:775x831/500x281/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3278052/original/067397600_1603686134-shutterstock_1819632680.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#rekmak3:hover {
+    transition: ease-in-out .2s;
+}
+
+#rekmak3:not(:hover) {
+    transition: ease-in-out .2s;
+}
+
+#kaki {
+    background-color: grey;
+    align-items: center;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#copy {
+    background-color: rgb(49, 48, 48);
+    color: white;
+    font-weight: 75;
+    text-align: center;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+#kaki div a{
+    padding-left: 10px;
+}
+
+.icon {
+    filter: grayscale(1);
+    border-radius: 30px;
+    height: 50px;
+    width: 50px;
+}
+
+.icon:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+    transition: ease-in .1s;
+}
+
+.icon:not(:hover) {
+    filter: grayscale(1);
+    transform: scale(1);
+    transition: ease-in .1s;
 }
