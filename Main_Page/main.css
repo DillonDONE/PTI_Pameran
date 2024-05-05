@@ -110,3 +110,49 @@
     transition: ease-in-out .2s;
 }
 
+#rekmak1 {
+    background-image: url("https://img.okezone.com/content/2016/01/02/298/1279452/mengenal-lempah-kuning-khas-bangka-belitung-rTOBu40Ic4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#rekmak1:hover {
+    transition: ease-in-out .2s;
+}
+
+#rekmak1:not(:hover) {
+    transition: ease-in-out .2s;
+}
+
+
+#rekmak2 {
+    background-image: url("https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/akurat/images/2023/01/big/img_63be1040b87463-30762885-95301142.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#rekmak2:hover {
+    transition: ease-in-out .2s;
+}
+
+#rekmak2:not(:hover) {
+    transition: ease-in-out .2s;
+}
+
+
+#rekmak3 {
+    background-image: url("https://cdn0-production-images-kly.akamaized.net/wbtA9GCQOxgLBotzLR0Nvf8YcZE=/0x394:775x831/500x281/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3278052/original/067397600_1603686134-shutterstock_1819632680.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#rekmak3:hover {
+    transition: ease-in-out .2s;
+}
+
+#rekmak3:not(:hover) {
+    transition: ease-in-out .2s;
+}
