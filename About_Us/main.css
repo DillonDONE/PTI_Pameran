@@ -1,3 +1,7 @@
+body {
+    background-color: #efefee;
+}
+
 .navi {
     background: rgba(51, 49, 48, 0.3);
     position: fixed;
@@ -207,8 +211,9 @@
 
 .konten {
     margin-top: 2rem;
-    padding: 10px;
+    padding: 20px;
     border-radius: 5px;
+    background-color: white;
 }
 
 .map-container {
