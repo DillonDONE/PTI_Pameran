@@ -20,7 +20,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #efefee;
 }
 
 
@@ -98,9 +97,6 @@
     border-radius: 50%;
     border: 4px solid #4070F4;
     max-width: 100%;
-    /* Added for responsiveness */
-    height: auto;
-    /* Added for responsiveness */
 }
 
 .name {
@@ -115,41 +111,239 @@
     text-align: center;
 }
 
-.button {
-    border: none;
-    font-size: 16px;
-    color: #FFF;
-    padding: 8px 16px;
-    background-color: #4070F4;
-    border-radius: 6px;
-    margin: 14px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.button:hover {
-    background: #265DF2;
-}
 
 @media (min-width: 992px) {
     .card {
         width: calc(33.333% - 40px);
-        /* Adjust margin according to your preference */
     }
 }
 
-/* For tablet screens */
 @media (max-width: 991px) {
     .card {
         width: calc(50% - 40px);
-        /* Adjust margin according to your preference */
     }
 }
 
-/* For mobile screens */
 @media (max-width: 767px) {
     .card {
         width: calc(100% - 40px);
-        /* Adjust margin according to your preference */
     }
+}
+
+
+#kaki {
+    background-color: grey;
+    align-items: center;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#copy {
+    background-color: rgb(49, 48, 48);
+    color: white;
+    font-weight: 75;
+    text-align: center;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+#kaki div a {
+    padding-left: 10px;
+}
+
+.icon {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon a img {
+    filter: grayscale(1);
+    border-radius: 30px;
+    height: 50px;
+    width: 50px;
+}
+
+.icon a img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+    transition: ease-in .1s;
+}
+
+.icon a img:not(:hover) {
+    filter: grayscale(1);
+    transform: scale(1);
+    transition: ease-in .1s;
+}
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding-top: 33.9%;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slid {
+    min-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.slid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.konten {
+    margin-top: 2rem;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.map-container {
+    margin-left: 10px;
+}
+
+.boxrekom {
+    border-radius: 5px;
+    padding: 4rem;
+    margin: 12px;
+    cursor: pointer;
+}
+
+.boxrekom:hover {
+    transform: scale(1.2);
+}
+
+.capt {
+    color: rgb(255, 255, 255);
+    transform: translateY(65px);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .boxrekom {
+        padding: 2rem;
+    }
+}
+
+#rek1 {
+    background-image: url("https://www.tempatwisata.pro/users_media/3064/pulau-lampu_1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#rek1:hover {
+    transition: ease-in-out .2s;
+}
+
+#rek1:not(:hover) {
+    transition: ease-in-out .2s;
+}
+
+
+#rek2 {
+    background-image: url("https://radarbanyumas.disway.id/upload/db2871ad0cc47729c3057a456c31704b.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#rek2:hover {
+    transition: ease-in-out .2s;
+}
+
+#rek2:not(:hover) {
+    transition: ease-in-out .2s;
+}
+
+
+#rek3 {
+    background-image: url("https://img.okezone.com/content/2023/07/18/408/2848383/7-pantai-cantik-yang-wajib-dikunjungi-di-pulau-bangka-bikin-ogah-pulang-fLScKnV4Sm.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#rek3:hover {
+    transition: ease-in-out .2s;
+}
+
+#rek3:not(:hover) {
+    transition: ease-in-out .2s;
+}
+
+#rekmak1 {
+    background-image: url("https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/p1/103/2024/01/24/lempah-Kuning-Khas-Bangka-Belitung-629108236.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#rekmak1:hover {
+    transition: ease-in-out .2s;
+}
+
+#rekmak1:not(:hover) {
+    transition: ease-in-out .2s;
+}
+
+
+#rekmak2 {
+    background-image: url("https://nibble-images.b-cdn.net/nibble/original_images/Mie-bangka-pesona-travel.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#rekmak2:hover {
+    transition: ease-in-out .2s;
+}
+
+#rekmak2:not(:hover) {
+    transition: ease-in-out .2s;
+}
+
+
+#rekmak3 {
+    background-image: url("https://cdn0-production-images-kly.akamaized.net/wbtA9GCQOxgLBotzLR0Nvf8YcZE=/0x394:775x831/500x281/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3278052/original/067397600_1603686134-shutterstock_1819632680.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#rekmak3:hover {
+    transition: ease-in-out .2s;
+}
+
+#rekmak3:not(:hover) {
+    transition: ease-in-out .2s;
+}
+
+#kaki {
+    background-color: grey;
+    align-items: center;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#copy {
+    background-color: rgb(49, 48, 48);
+    color: white;
+    font-weight: 75;
+    text-align: center;
+    padding: 10px;
+    margin-top: 15px;
 }
