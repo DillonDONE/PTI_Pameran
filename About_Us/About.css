@@ -360,9 +360,10 @@ body {
 
 .biografi:hover img {
     transform: scale(1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 3px rgba(0, 0, 0, 0.3);
     background-color: #ddd;
     opacity: 1;
+    border-radius: 10px;
 }
 
 .bio1 {
