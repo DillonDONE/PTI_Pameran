@@ -1,10 +1,10 @@
+
 .navi {
     background: rgba(51, 49, 48, 0.3);
     position: fixed;
     width: 100%;
-    z-index: 1000;
+    z-index: 1000; 
 }
-
 .slider-container {
     width: 100%;
     overflow: hidden;
@@ -35,13 +35,35 @@
 }
 
 .konten {
-    margin-top: 2rem;
+    margin-top: 2rem; 
     padding: 10px;
     border-radius: 5px;
 }
 
 .map-container {
-    margin-left: 10px;
+    position: relative;
+    width: 100%;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+}
+
+#player {
+    position: relative;
+    width: 100%;
+}
+
+#player iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .boxrekom {
@@ -177,7 +199,7 @@
     margin-top: 15px;
 }
 
-#kaki div a {
+#kaki div a{
     padding-left: 10px;
 }
 
@@ -187,7 +209,7 @@
     align-items: center;
 }
 
-.icon a img {
+.icon a img{
     filter: grayscale(1);
     border-radius: 30px;
     height: 50px;
