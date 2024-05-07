@@ -370,3 +370,7 @@ body {
     display: inline;
     text-align: right;
 }
+
+.penamaan {
+    font-weight: bold;
+}
