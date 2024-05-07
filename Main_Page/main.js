@@ -22,6 +22,7 @@ function updateSlider() {
 setInterval(nextSlide, 5000); 
 
 //API List
+//Data Provinsi Wilayah
 let provinsi;
 
 fetch('https://www.emsifa.com/api-wilayah-indonesia/api/provinces.json')
@@ -35,6 +36,7 @@ fetch('https://www.emsifa.com/api-wilayah-indonesia/api/provinces.json')
     ganti.innerHTML = `${nama}`;
 });
 
+//Youtube
 let API_KEY = 'AIzaSyDKqZym98vyfQ_2tvmUtQV5xJAoTpDDUn0';
 
 let VIDEO_ID = 'iEwqEuyKLHs';
