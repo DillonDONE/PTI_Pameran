@@ -74,13 +74,19 @@
 }
 
 .boxrekom:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
+    filter: blur(1px);
 }
 
 .capt {
     color: rgb(255, 255, 255);
-    transform: translateY(65px);
     text-align: center;
+    filter: opacity(0);
+    
+}
+
+.capt:hover {
+    filter: opacity(1);
 }
 
 @media (max-width: 768px) {
@@ -88,6 +94,30 @@
         padding: 2rem;
     }
 }
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.container img {
+    height: 25vh;
+    width: 40vh;
+    border-radius: 5px;
+}
+
+.container img:hover {
+    filter: blur(1.5px)
+}
+
+.teks {
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+    color: black;
+    border: 2px solid;
+}
+
 
 #rek1 {
     background-image: url("https://www.tempatwisata.pro/users_media/3064/pulau-lampu_1.jpg");
@@ -122,7 +152,7 @@
 
 
 #rek3 {
-    background-image: url("https://img.okezone.com/content/2023/07/18/408/2848383/7-pantai-cantik-yang-wajib-dikunjungi-di-pulau-bangka-bikin-ogah-pulang-fLScKnV4Sm.jpg");
+    background-image: url("https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/p1/43/2023/09/18/jembatan-emas-babel-2818684468.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -226,4 +256,92 @@
     filter: grayscale(1);
     transform: scale(1);
     transition: ease-in .1s;
+}
+
+.card-info {
+    position: absolute;
+    z-index: 3;
+    color: transparent;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.text-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 0;
+    margin: 0; 
+    color: aliceblue;
+}
+
+.text-body {
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    margin: 5px 0 15px 0;
+}
+
+.card:hover {
+    transform: translateY(5%);
+    transition: ease-in .3s;
+}
+
+.card:not(:hover) {
+    transform: translateY(0%);
+    transition: ease-in .3s;
+}
+
+.card:hover:before {
+    opacity: 1;
+}
+
+.card:hover .card-info {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.kartu {
+    flex-wrap: wrap; 
+}
+
+.sekat {
+    margin: 1rem; 
+    flex: 0 0 30%; 
+}
+
+.card {
+    position: relative;
+    height: 200px; 
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: transparent; 
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #fff;
+}
+
+.text-title {
+    font-size: 1.2rem; 
+    margin: 0; 
+    padding: 0; 
+}
+
+
+@media (max-width: 768px) {
+    .sekat {
+        flex: 0 0 100%; 
+    }
 }
