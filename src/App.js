@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className={`App ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
+      <header>
+        <h1>Contoh Mode Gelap dan Terang</h1>
+        <button onClick={toggleDarkMode}>
+          {isDarkMode ? 'Mode Terang' : 'Mode Gelap'}
+        </button>
       </header>
+      <main>
+        <p>
+          Ini adalah contoh halaman web dengan mode gelap dan mode terang.
+          Cobalah untuk mengklik tombol di atas untuk mengubah mode.
+        </p>
+      </main>
     </div>
   );
 }
