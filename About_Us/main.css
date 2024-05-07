@@ -30,7 +30,7 @@ body {
 .slide-container {
     max-width: 10000px;
     width: 100%;
-    background-color: #333;
+    background-color: #efefee;
     padding: 20px;
     overflow: hidden;
 }
@@ -65,7 +65,7 @@ body {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: #4070F4;
+    background-color: #1851ec00;
     border-radius: 25px 25px 0 25px;
 }
 
@@ -77,7 +77,7 @@ body {
     bottom: -40px;
     height: 40px;
     width: 40px;
-    background-color: #4070F4;
+    background-color: #1851ec00;
 }
 
 .overlay::after {

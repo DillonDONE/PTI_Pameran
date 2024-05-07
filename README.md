@@ -1,2 +1,0 @@
-# PTI_Pameran
-DAhlah
