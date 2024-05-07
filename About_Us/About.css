@@ -362,7 +362,7 @@ body {
     transform: scale(1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     background-color: #ddd;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .bio1 {
@@ -374,7 +374,6 @@ body {
 }
 
 .pos {
-    display: inline;
     text-align: right;
 }
 
