@@ -20,3 +20,20 @@ function updateSlider() {
 }
 
 setInterval(nextSlide, 5000); 
+
+//API List
+let provinsi;
+
+fetch('https://www.emsifa.com/api-wilayah-indonesia/api/provinces.json')
+.then(response => response.json())
+.then(provinces => {
+    provinsi = provinces;
+    console.log(provinsi);
+    
+    let ganti = document.getElementById('judul');
+    let nama = provinsi[8].name;
+    ganti.innerHTML = `${nama}`;
+});
+
+
+//End of API List
