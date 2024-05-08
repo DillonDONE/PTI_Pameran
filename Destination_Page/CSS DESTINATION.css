@@ -1,9 +1,3 @@
-.navi {
-  background: rgba(51, 49, 48, 0.3);
-  position: relative;
-  width: 100%;
-}
-
 #kepala {
   height: 70vh;
   background-image: url("/Animasi_and_Picture/main3.jpg");
@@ -92,6 +86,41 @@ header {
   display: block;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navi {
+  background: rgba(51, 49, 48, 0.3);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding-top: 33.9%;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .deskripsi {
