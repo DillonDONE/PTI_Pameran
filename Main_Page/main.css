@@ -5,6 +5,12 @@
     width: 100%;
     z-index: 1000; 
 }
+
+.logo {
+    width: 7vh;
+    height: 7vh;
+}
+
 .slider-container {
     width: 100%;
     overflow: hidden;
@@ -98,16 +104,6 @@
 .container {
     position: relative;
     width: 100%;
-}
-
-.container img {
-    height: 25vh;
-    width: 40vh;
-    border-radius: 5px;
-}
-
-.container img:hover {
-    filter: blur(1.5px)
 }
 
 .teks {
