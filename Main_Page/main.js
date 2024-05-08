@@ -1,15 +1,3 @@
-//Navbar
-var path = window.location.pathname;
-var navbarItems = document.querySelectorAll(".navbar-item");
-
-navbarItems.forEach(function (item) {
-  item.classList.remove("active");
-
-  if (item.getAttribute("href") === path) {
-    item.classList.add("active");
-  }
-});
-
 //Slide photo
 const slider = document.querySelector(".slider");
 const slides = document.querySelectorAll(".slide");
