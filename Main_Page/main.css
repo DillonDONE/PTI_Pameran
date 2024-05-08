@@ -6,6 +6,10 @@
     z-index: 1000; 
 }
 
+.navbar-item.active {
+    font-weight: bold;
+}
+
 .logo {
     width: 7vh;
     height: 7vh;

@@ -1,5 +1,6 @@
-const slider = document.querySelector('.slider');
-const slides = document.querySelectorAll('.slide');
+//Slide photo
+const slider = document.querySelector(".slider");
+const slides = document.querySelectorAll(".slide");
 
 let currentIndex = 0;
 let slideWidth = slides[currentIndex].clientWidth;
@@ -10,7 +11,7 @@ function updateSlideWidth() {
 
 function nextSlide() {
   currentIndex = (currentIndex + 1) % slides.length;
-  updateSlideWidth(); 
+  updateSlideWidth();
   updateSlider();
 }
 
@@ -19,64 +20,66 @@ function updateSlider() {
   slider.style.transform = `translateX(${offset}px)`;
 }
 
-setInterval(nextSlide, 5000); 
+setInterval(nextSlide, 5000);
 
 //API List
 //API Provinsi
 let provinsi;
 
-fetch('https://www.emsifa.com/api-wilayah-indonesia/api/provinces.json')
-.then(response => response.json())
-.then(provinces => {
+fetch("https://www.emsifa.com/api-wilayah-indonesia/api/provinces.json")
+  .then((response) => response.json())
+  .then((provinces) => {
     provinsi = provinces;
     console.log(provinsi);
-    
-    let ganti = document.getElementById('judul');
+
+    let ganti = document.getElementById("judul");
     let nama = provinsi[8].name;
     ganti.innerHTML = `${nama}`;
-});
+  });
 
-let API_KEY = 'AIzaSyDKqZym98vyfQ_2tvmUtQV5xJAoTpDDUn0';
+let API_KEY = "AIzaSyDKqZym98vyfQ_2tvmUtQV5xJAoTpDDUn0";
 
-let VIDEO_ID = 'uXxUCRvRe14';
+let VIDEO_ID = "uXxUCRvRe14";
 
-let tag = document.createElement('script');
-tag.src = 'https://www.youtube.com/iframe_api';
-let firstScriptTag = document.getElementsByTagName('script')[0];
+let tag = document.createElement("script");
+tag.src = "https://www.youtube.com/iframe_api";
+let firstScriptTag = document.getElementsByTagName("script")[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 //API Youtube Video
 let player;
 function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player', {
-        height: '300',
-        width: '500',
-        videoId: VIDEO_ID,
-        playerlets: {
-            'autoplay': 1,
-            'controls': 1,
-            'showinfo': 0,
-            'rel': 0,
-            'loop': 1
-        },
-        events: {
-            'onReady': onPlayerReady
-        }
-    });
+  player = new YT.Player("player", {
+    height: "300",
+    width: "500",
+    videoId: VIDEO_ID,
+    playerlets: {
+      autoplay: 1,
+      controls: 1,
+      showinfo: 0,
+      rel: 0,
+      loop: 1,
+    },
+    events: {
+      onReady: onPlayerReady,
+    },
+  });
 }
 
 function onPlayerReady(event) {
-    event.target.playVideo();
+  event.target.playVideo();
 }
 
 //End of API List
 
 //Toggle Theme
-const themeSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-themeSwitch.addEventListener('change', function(event) {
+const themeSwitch = document.querySelector(
+  '.theme-switch input[type="checkbox"]'
+);
+themeSwitch.addEventListener("change", function (event) {
   if (event.target.checked) {
-    document.body.classList.replace('light-mode', 'dark-mode');
+    document.body.classList.replace("light-mode", "dark-mode");
   } else {
-    document.body.classList.replace('dark-mode', 'light-mode');
+    document.body.classList.replace("dark-mode", "light-mode");
   }
 });
