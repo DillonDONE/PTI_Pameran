@@ -100,6 +100,7 @@
 }
 
 .container {
+  display: flex;
   position: relative;
   width: 100%;
 }
@@ -295,7 +296,6 @@
 
 .sekat {
   margin: 1rem;
-  flex: 0 0 30%;
 }
 
 .card {
@@ -303,7 +303,7 @@
   height: 200px;
   width: 150px;
   border-radius: 10px;
-  overflow: hidden  ;
+  overflow: hidden;
   cursor: pointer;
   background-color: transparent;
   transition: transform 0.3s ease;
