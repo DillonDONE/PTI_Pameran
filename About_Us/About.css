@@ -166,6 +166,17 @@ body {
     background-color: white;
 }
 
+
+.konten-putih {
+    background-color: white;
+    color: black;
+}
+
+.konten-hitam {
+    background-color: rgb(61, 61, 61);
+    color: white;
+}
+
 .map-container {
     margin-left: 10px;
 }

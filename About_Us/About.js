@@ -65,3 +65,24 @@ function onYouTubeIframeAPIReady() {
 function onPlayerReady(event) {
     event.target.playVideo();
 }
+
+//Toggle Theme
+const themeSwitch = document.querySelector(
+  '.theme-switch input[type="checkbox"]'
+);
+themeSwitch.addEventListener("change", function (event) {
+  if (event.target.checked) {
+    document.body.classList.replace("light-mode", "dark-mode");
+    let kontenElements = document.querySelectorAll(".konten");
+    kontenElements.forEach(function (element) {
+      element.classList.replace("konten-putih", "konten-hitam");
+    });
+  } else {
+    document.body.classList.replace("dark-mode", "light-mode");
+    let kontenElements = document.querySelectorAll(".konten");
+    kontenElements.forEach(function (element) {
+      element.classList.replace("konten-hitam", "konten-putih");
+    });
+  }
+});
+
