@@ -46,8 +46,18 @@
 
 .konten {
     margin-top: 2rem; 
-    padding: 10px;
+    padding: 1rem;
     border-radius: 5px;
+}
+
+.konten-putih {
+    background-color: white;
+    color: black;
+}
+
+.konten-hitam {
+    background-color: rgb(61, 61, 61);
+    color: white;
 }
 
 .map-container {
