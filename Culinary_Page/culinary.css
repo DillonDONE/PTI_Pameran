@@ -1,9 +1,8 @@
-
 .navi {
     background: rgba(51, 49, 48, 0.3);
     position: fixed;
     width: 100%;
-    z-index: 1000; 
+    z-index: 1000;
 }
 
 .logo {
@@ -130,12 +129,12 @@
     justify-content: center;
     text-align: center;
     margin-bottom: 30px;
-    margin-left: 17rem;
+    /* margin-left: 17rem; */
 }
 
-.menu .menu_box {
+.menu_box {
     width: 95%;
-    margin: 0 auto;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 15px;
@@ -143,6 +142,7 @@
 
 .menu .menu_box .menu_card {
     width: 325px;
+    overlay: auto;
     height: 480px;
     padding-top: 10px;
     margin-bottom: 20px;
@@ -157,6 +157,7 @@
     height: 245px;
     margin: 0 auto;
     overflow: hidden;
+    overlay: auto;
 }
 
 .menu .menu_box .menu_card .menu_image img {
@@ -172,6 +173,8 @@
 }
 
 .menu .menu_box .menu_card .small_card {
+    overflow: hidden;
+    overlay: auto;
     width: 45px;
     height: 45px;
     float: right;
@@ -237,7 +240,7 @@
         margin-left: 10%;
     }
 
-    .menu .menu_box .menu_card{
+    .menu .menu_box .menu_card {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         grid-gap: 15px;
     }
@@ -333,4 +336,3 @@
     margin: 0 80px;
     transition: 0.3s;
 }*/
-
