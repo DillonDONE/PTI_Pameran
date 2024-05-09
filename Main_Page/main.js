@@ -30,13 +30,29 @@ fetch("https://www.emsifa.com/api-wilayah-indonesia/api/provinces.json")
   .then((response) => response.json())
   .then((provinces) => {
     provinsi = provinces;
-    console.log(provinsi);
-
+    console.log(provinces);
     let ganti = document.getElementById("judul");
     let nama = provinsi[8].name;
     ganti.innerHTML = `${nama}`;
   });
 
+//API Ibu Kota
+const ibuKota = 'Pangkalpinang'
+$.ajax({
+    method: 'GET',
+    url: 'https://api.api-ninjas.com/v1/city?name=' + ibuKota,
+    headers: { 'X-Api-Key': 'RiItGqqcVzAEEqp3DXE0dg==qROxANZdhJzXDNjj'},
+    contentType: 'application/json',
+    success: function(result) {
+        console.log(result);
+        document.getElementById('ibu').innerHTML = `${result[0].name}`;
+    },
+    error: function ajaxError(jqXHR) {
+        console.error('Error: ', jqXHR.responseText);
+    }
+});
+
+//API Youtube Video
 let API_KEY = "AIzaSyDKqZym98vyfQ_2tvmUtQV5xJAoTpDDUn0";
 
 let VIDEO_ID = "uXxUCRvRe14";
@@ -71,36 +87,50 @@ function onPlayerReady(event) {
 }
 
 //Time API
-const city = 'jakarta';
+const city = "jakarta";
 $.ajax({
-    method: 'GET',
-    url: 'https://api.api-ninjas.com/v1/worldtime?city=' + city,
-    headers: { 'X-Api-Key': 'RiItGqqcVzAEEqp3DXE0dg==qROxANZdhJzXDNjj'},
-    contentType: 'application/json',
-    success: function(result) {
+  method: "GET",
+  url: "https://api.api-ninjas.com/v1/worldtime?city=" + city,
+  headers: { "X-Api-Key": "RiItGqqcVzAEEqp3DXE0dg==qROxANZdhJzXDNjj" },
+  contentType: "application/json",
+  success: function (result) {
         console.log(result);
-        $('#date').text(result.date);
+    $("#date").text(result.date);
     },
     error: function ajaxError(jqXHR) {
-        console.error('Error: ', jqXHR.responseText);
-    }
+    console.error("Error: ", jqXHR.responseText);
+  },
+});
+
+//Font API
+fetch("https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyCQu3hOsmx94omGUHSdWMGr6-DtjYNKDA0")
+  .then((response) => response.json())
+  .then((fontsData) => {
+    const fonts = fontsData.items.map((item) => item.family);
+    const selectedFont = fonts[0]; 
+    document.getElementById('judul').style.fontFamily = selectedFont;
+  })
+  .catch((error) => {
+    console.error("Error fetching fonts:", error);
 });
 
 //End of API List
 
 //Toggle Theme
-const themeSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+const themeSwitch = document.querySelector(
+  '.theme-switch input[type="checkbox"]'
+);
 themeSwitch.addEventListener("change", function (event) {
   if (event.target.checked) {
     document.body.classList.replace("light-mode", "dark-mode");
-    let kontenElements = document.querySelectorAll('.konten');
-    kontenElements.forEach(function(element) {
+    let kontenElements = document.querySelectorAll(".konten");
+    kontenElements.forEach(function (element) {
       element.classList.replace("konten-putih", "konten-hitam");
     });
   } else {
     document.body.classList.replace("dark-mode", "light-mode");
-    let kontenElements = document.querySelectorAll('.konten');
-    kontenElements.forEach(function(element) {
+    let kontenElements = document.querySelectorAll(".konten");
+    kontenElements.forEach(function (element) {
       element.classList.replace("konten-hitam", "konten-putih");
     });
   }
