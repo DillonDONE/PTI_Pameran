@@ -9,89 +9,61 @@ body {
     z-index: 1000;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-* {
-
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
-}
-
-.sekat {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.slide-container {
-    max-width: 10000px;
-    width: 100%;
-    background-color: #efefee;
-    padding: 20px;
+.contain {
     overflow: hidden;
-}
-
-.slide-content {
-    margin: 0 40px;
-}
-
-.card {
-    width: 320px;
-    border-radius: 25px;
-    background-color: #fff;
-}
-
-.image-content,
-.card-content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 14px;
-}
-
-.image-content {
-    position: relative;
-    row-gap: 5px;
-    padding: 25px 0;
-}
-
-.overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
+    scroll-snap-type: x mandatory;
     width: 100%;
-    background-color: #1851ec00;
-    border-radius: 25px 25px 0 25px;
+    margin: auto;
+    padding: 3rem;
 }
 
-.overlay::before,
-.overlay::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    bottom: -40px;
-    height: 40px;
-    width: 40px;
-    background-color: #1851ec00;
+.card1 {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(38, 40, 62, 0.37);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 10px;
+    padding: 3rem;
+    margin: 1rem;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.overlay::after {
-    border-radius: 0 25px 0 0;
-    background-color: #fff;
+.card1 .card-image {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contain:hover> :not(:hover) {
+    opacity: 0.2;
+    transition: ease-in .3s;
+}
+
+.titles {
+    width: 100%;
+    position: fixed;
+    display: inline-block;
+    word-break: break-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    margin: 1rem auto;
 }
 
 .card-image {
-    position: relative;
+    position: absolute;
+    display: inline-block;
     height: 150px;
     width: 150px;
     border-radius: 50%;
     background: #fff;
-    padding: 3px;
+    /* padding: 2px; */
+
 }
 
 .card-image .card-img {
@@ -99,39 +71,17 @@ body {
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
-    border: 4px solid #4070F4;
+    border: 4px solid #3f4146;
     max-width: 100%;
+    margin-left: auto;
 }
 
-.name {
-    font-size: 18px;
-    font-weight: 500;
-    color: #333
-}
-
-.description {
-    font-size: 14px;
-    color: #707070;
-    text-align: center;
-}
-
-
-@media (min-width: 992px) {
-    .card {
-        width: calc(33.333% - 40px);
-    }
-}
-
-@media (max-width: 991px) {
-    .card {
-        width: calc(50% - 40px);
-    }
-}
-
-@media (max-width: 767px) {
-    .card {
-        width: calc(100% - 40px);
-    }
+.card-image h6,
+.card-image p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    /* Mengatur jarak antara baris */
 }
 
 
@@ -171,13 +121,13 @@ body {
 .icon a img:hover {
     filter: grayscale(0);
     transform: scale(1.1);
-    transition: ease-in .1s;
+    transition: ease-in .3s;
 }
 
 .icon a img:not(:hover) {
     filter: grayscale(1);
     transform: scale(1);
-    transition: ease-in .1s;
+    transition: ease-in .3s;
 }
 
 .slider-container {
@@ -210,8 +160,8 @@ body {
 }
 
 .konten {
-    margin-top: 2rem;
-    padding: 20px;
+    margin-top: 4rem;
+    padding: 2px 80px;
     border-radius: 5px;
     background-color: white;
 }
@@ -353,17 +303,21 @@ body {
     margin-top: 15px;
 }
 
+
 .biografi img {
-    padding: 20px;
-    width: 300px;
+    position: relative;
+    height: 250px;
+    width: 200px;
+    border-radius: 10%;
+    background: #fff;
+    padding: 3px;
 }
 
 .biografi:hover img {
     transform: scale(1);
-    box-shadow: 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 10px rgba(0, 0, 0, 0.3);
     background-color: #ddd;
     opacity: 1;
-    border-radius: 10px;
 }
 
 .bio1 {
@@ -380,4 +334,61 @@ body {
 
 .penamaan {
     font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .navi {
+        position: static;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider-container {
+        padding-top: 56.25%;
+    }
+
+    .slider {
+        display: block;
+    }
+
+    .slid {
+        min-width: 100%;
+    }
+
+    .slid img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 768px) {
+    .contain {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .card1 {
+        width: 70%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .biografi img {
+        height: auto;
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    #kaki {
+        padding-top: 0;
+    }
+
+    #copy {
+        margin-top: 0;
+    }
 }
