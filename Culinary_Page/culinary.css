@@ -1,9 +1,9 @@
-/* CSS for Navi */
+
 .navi {
     background: rgba(51, 49, 48, 0.3);
     position: fixed;
     width: 100%;
-    z-index: 1000;
+    z-index: 1000; 
 }
 
 .logo {
@@ -11,7 +11,6 @@
     height: 7vh;
 }
 
-/* CSS for Slider */
 .slider-container {
     width: 100%;
     overflow: hidden;
@@ -41,7 +40,6 @@
     object-fit: cover;
 }
 
-/* CSS for Konten */
 .konten {
     margin-top: 2rem;
     padding: 10px;
@@ -53,7 +51,6 @@
     margin-left: 10px;
 }
 
-/* CSS for Box Rekomendasi */
 .boxrekom {
     border-radius: 5px;
     padding: 4rem;
@@ -71,7 +68,12 @@
     text-align: center;
 }
 
-/* CSS for Footer */
+@media (max-width: 768px) {
+    .boxrekom {
+        padding: 2rem;
+    }
+}
+
 #kaki {
     background-color: grey;
     align-items: center;
@@ -92,7 +94,6 @@
     padding-left: 10px;
 }
 
-/* CSS for Social Icons */
 .icon {
     text-align: center;
     justify-content: center;
@@ -118,7 +119,6 @@
     transition: ease-in .1s;
 }
 
-/* CSS for Menu */
 .menu {
     width: 100%;
     padding: 70px 0;
@@ -231,13 +231,60 @@
     margin: 10px 0 10px 0;
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 1600px) {
+@media (max-width: 1200px) {
     .menu h1 {
-        font-size: 50px;
+        font-size: 40px;
+        margin-left: 10%;
+    }
+
+    .menu .menu_box .menu_card{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 15px;
     }
 }
 
+@media (max-width: 1000px) {
+    .menu h1 {
+        font-size: 35px;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 800px) {
+    .menu h1 {
+        font-size: 30px;
+        margin-left: 5%;
+    }
+
+    .menu .menu_box .menu_card {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        justify-items: center;
+        grid-gap: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu h1 {
+        font-size: 25px;
+        margin-left: -30%;
+    }
+
+    .menu .menu_box {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+/*@media (min-width: 582px) and (max-width: 1200px) {
+    .menu .menu_box .menu_card{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 15px;
+        margin: 10px;
+    }
+}
+
+
+
+/* Media Queries 
 @media (max-width: 1200px) {
     .menu h1 {
         font-size: 40px;
@@ -248,6 +295,7 @@
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 }
+
 
 @media (max-width: 992px) {
     .menu h1 {
@@ -261,35 +309,28 @@
         margin-left: 5%;
     }
 
-    .menu .menu_box .menu_card {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .menu .menu_box .menu_card .menu_image {
-        width: 100%;
-        height: 200px;
-    }
-
-    .menu .menu_box .menu_card .small_card {
-        top: -200px;
-    }
-
-    .menu .menu_box .menu_card .menu_info h2 {
-        font-size: 20px;
-    }
-
-    .menu .menu_box .menu_card .menu_info p {
-        font-size: 14px;
+    .menu .menu_box {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
     }
 }
 
 @media (max-width: 576px) {
-    .menu .menu_box .menu_card .menu_info h2 {
-        font-size: 18px;
+    .menu .menu_box {
+        grid-template-columns: repeat(1, 1fr);
     }
+}*/
 
-    .menu .menu_box .menu_card .menu_info p {
-        font-size: 13px;
-    }
-}
+
+/*.menu .menu_box .menu_card .menu_info .menu_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background: #000;
+    padding: 8px 10px;
+    margin: 0 80px;
+    transition: 0.3s;
+}*/
+
