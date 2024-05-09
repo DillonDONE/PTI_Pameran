@@ -1,20 +1,3 @@
-var swiper = new Swiper(".slide-content", {
-  slidesPerView: 3,
-  spaceBetween: 25,
-  loop: true,
-  centerSlide: 'true',
-  fade: 'true',
-  gragCursor: 'true',
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-
 const slider = document.querySelector('.slider');
 const slides = document.querySelectorAll('.slid');
 
@@ -38,9 +21,6 @@ function updateSlider() {
 
 setInterval(nextSlide, 3000); 
 
-
-//API List
-//Data Provinsi Wilayah
 let provinsi;
 
 fetch('https://www.emsifa.com/api-wilayah-indonesia/api/provinces.json')
@@ -54,7 +34,6 @@ fetch('https://www.emsifa.com/api-wilayah-indonesia/api/provinces.json')
     ganti.innerHTML = `${nama}`;
 });
 
-//Youtube
 let API_KEY = 'AIzaSyDKqZym98vyfQ_2tvmUtQV5xJAoTpDDUn0';
 
 let VIDEO_ID = 'iEwqEuyKLHs';
@@ -86,5 +65,3 @@ function onYouTubeIframeAPIReady() {
 function onPlayerReady(event) {
     event.target.playVideo();
 }
-
-//End of API List
