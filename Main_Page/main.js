@@ -62,7 +62,6 @@ tag.src = "https://www.youtube.com/iframe_api";
 let firstScriptTag = document.getElementsByTagName("script")[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-//API Youtube Video
 let player;
 function onYouTubeIframeAPIReady() {
   player = new YT.Player("player", {
