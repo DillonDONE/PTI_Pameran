@@ -206,7 +206,7 @@
   }
 
   body.light-mode {
-    background-color: #fff;
+    background-color: whitesmoke;
     color: #222;
     transition: ease-in .3s;
   }
