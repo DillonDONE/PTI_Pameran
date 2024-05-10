@@ -70,17 +70,17 @@
     overflow: hidden;
 }
 
-.grid > article {
+/* .grid > article {
     border-radius: 20px;
     text-align: center;
-    background-color: #a5a5a5;
+    background-color: whitesmoke;
     transition: transform;
 }
 
 .grid > article {
     /*width: 100;*/
     cursor: pointer;
-}
+} */
 
 .konten {
     cursor: pointer;
@@ -167,7 +167,7 @@
 }
 
 .konten-putih {
-    background-color: black;
+    background-color: whitesmoke;
     color: black;
 }
 
