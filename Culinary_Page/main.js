@@ -1,5 +1,6 @@
+
 const slider = document.querySelector('.slider');
-const slides = document.querySelectorAll('.slid');
+const slides = document.querySelectorAll('.slide');
 
 let currentIndex = 0;
 let slideWidth = slides[currentIndex].clientWidth;
@@ -19,8 +20,10 @@ function updateSlider() {
   slider.style.transform = `translateX(${offset}px)`;
 }
 
-setInterval(nextSlide, 3000); 
+setInterval(nextSlide, 5000); 
 
+//API List
+//API Provinsi
 let provinsi;
 
 fetch('https://www.emsifa.com/api-wilayah-indonesia/api/provinces.json')
@@ -36,13 +39,14 @@ fetch('https://www.emsifa.com/api-wilayah-indonesia/api/provinces.json')
 
 let API_KEY = 'AIzaSyDKqZym98vyfQ_2tvmUtQV5xJAoTpDDUn0';
 
-let VIDEO_ID = 'iEwqEuyKLHs';
+let VIDEO_ID = 'uXxUCRvRe14';
 
 let tag = document.createElement('script');
 tag.src = 'https://www.youtube.com/iframe_api';
 let firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
+//API Youtube Video
 let player;
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
@@ -65,3 +69,17 @@ function onYouTubeIframeAPIReady() {
 function onPlayerReady(event) {
     event.target.playVideo();
 }
+
+//End of API List
+
+//Toggle Theme
+const themeSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+themeSwitch.addEventListener('change', function(event) {
+  if (event.target.checked) {
+    document.body.classList.replace('light-mode', 'dark-mode');
+    document.getElementById('makanan').classList.replace('menu_card_lightmode', 'menu_card_darkmode');
+  } else {
+    document.body.classList.replace('dark-mode', 'light-mode');
+    document.getElementById('makanan').classList.replace('menu_card_darkmode', 'menu_card_lightmode');
+  }
+});
