@@ -20,7 +20,7 @@ function updateSlider() {
   slider.style.transform = `translateX(${offset}px)`;
 }
 
-setInterval(nextSlide, 5000);
+setInterval(nextSlide, 2000);
 
 //API List
 //API Provinsi
