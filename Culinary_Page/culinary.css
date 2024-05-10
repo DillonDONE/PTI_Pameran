@@ -117,9 +117,9 @@
     z-index: 1000;
 }
 
-.navbar-item.active {
+/* .navbar-item.active {
     font-weight: bold;
-}
+} */
 
 .logo {
     width: 6vh;
