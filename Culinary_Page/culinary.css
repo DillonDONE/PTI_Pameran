@@ -1,23 +1,27 @@
-.grid{
+.grid {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin: 80px;
     align-items: center;
     grid-gap: 30px;
 }
+
 #kaki div a {
     padding-left: 10px;
 }
+
 #kaki {
     background-color: grey;
     align-items: center;
     text-align: center;
     padding-top: 15px;
 }
+
 .container {
     position: relative;
     width: 100%;
 }
+
 .icon {
     text-align: center;
     justify-content: center;
@@ -42,15 +46,18 @@
     transform: scale(1);
     transition: ease-in .1s;
 }
-.gambar:hover{
+
+.gambar:hover {
     transform: scale(1.1);
     transition: ease-in .3s;
 }
-.gambar:not(:hover){
+
+.gambar:not(:hover) {
     transform: scale(1);
     transition: ease-in .3s;
 }
-.box{
+
+.box {
     width: 275px;
     height: 245px;
     margin: 0 auto;
@@ -58,41 +65,47 @@
     border-radius: 10px;
     overflow: hidden;
 }
-.grid > article{
+
+.grid>article {
     border-radius: 20px;
     text-align: center;
     background-color: whitesmoke;
     transition: transform;
 }
-.grid > article{
+
+.grid>article {
     /*width: 100;*/
     cursor: pointer;
 }
-.konten{
+
+.konten {
     cursor: pointer;
 }
 
-@media (max-width:1200px){
-    .grid{
-        grid-template-columns: repeat(3,1fr);
-    }
-}
-@media (max-width:1000px){
-    .grid{
-        grid-template-columns: repeat(2,1fr);
-    }
-}
-@media (max-width:750px){
-    .grid{
-        grid-template-columns: repeat(2,1fr);
+@media (max-width:1200px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media (max-width:500px){
-    .grid{
-        grid-template-columns: repeat(1,1fr);
+@media (max-width:1000px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
+
+@media (max-width:750px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:500px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 .navi {
     background: rgba(51, 49, 48, 0.3);
     position: fixed;
