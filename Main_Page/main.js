@@ -94,7 +94,7 @@ $.ajax({
   contentType: "application/json",
   success: function (result) {
         console.log(result);
-    $("#date").text(result.date);
+        $("#date").text(result.date);
     },
     error: function ajaxError(jqXHR) {
     console.error("Error: ", jqXHR.responseText);
