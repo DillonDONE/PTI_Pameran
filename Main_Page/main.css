@@ -49,16 +49,6 @@
     border-radius: 5px;
 }
 
-.konten-putih {
-    background-color: white;
-    color: black;
-}
-
-.konten-hitam {
-    background-color: rgb(61, 61, 61);
-    color: white;
-}
-
 .map-container {
     position: relative;
     width: 100%;
