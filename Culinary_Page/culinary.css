@@ -70,7 +70,7 @@
     overflow: hidden;
 }
 
-.grid > article {
+/* .grid > article {
     border-radius: 20px;
     text-align: center;
     background-color: whitesmoke;
@@ -80,7 +80,7 @@
 .grid > article {
     /*width: 100;*/
     cursor: pointer;
-}
+} */
 
 .konten {
     cursor: pointer;
@@ -117,9 +117,9 @@
     z-index: 1000;
 }
 
-.navbar-item.active {
+/* .navbar-item.active {
     font-weight: bold;
-}
+} */
 
 .logo {
     width: 6vh;
@@ -147,6 +147,8 @@
     min-width: 100%;
     height: auto;
     overflow: hidden;
+    cursor: pointer;
+    
 }
 
 .slide img {
@@ -165,7 +167,7 @@
 }
 
 .konten-putih {
-    background-color: black;
+    background-color: whitesmoke;
     color: black;
 }
 

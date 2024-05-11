@@ -19,7 +19,7 @@ function updateSlider() {
   slider.style.transform = `translateX(${offset}px)`;
 }
 
-setInterval(nextSlide, 3000); 
+setInterval(nextSlide, 2000); 
 
 let provinsi;
 
