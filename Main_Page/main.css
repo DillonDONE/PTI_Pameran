@@ -351,15 +351,15 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        gap: 10px; /* Tambahkan jarak antara ikon */
+        gap: 10px;
     }
 
     .icon a img {
-        height: 40px; /* Ubah tinggi ikon */
-        width: 40px; /* Biarkan lebar ikon menyesuaikan proporsi */
+        height: 40px; 
+        width: 40px; 
     }
 
     .col-md-4 {
-        margin-bottom: 20px; /* Tambahkan jarak di antara kolom pada ukuran layar yang lebih kecil */
+        margin-bottom: 20px;
     }
 }
