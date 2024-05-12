@@ -70,18 +70,6 @@
     overflow: hidden;
 }
 
-/* .grid > article {
-    border-radius: 20px;
-    text-align: center;
-    background-color: whitesmoke;
-    transition: transform;
-}
-
-.grid > article {
-    /*width: 100;*/
-    cursor: pointer;
-} */
-
 .konten {
     cursor: pointer;
 }
