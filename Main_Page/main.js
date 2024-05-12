@@ -37,20 +37,18 @@ fetch("https://www.emsifa.com/api-wilayah-indonesia/api/provinces.json")
   });
 
 //API Ibu Kota
-const ibuKota = 'Pangkalpinang'
-$.ajax({
-    method: 'GET',
-    url: 'https://api.api-ninjas.com/v1/city?name=' + ibuKota,
-    headers: { 'X-Api-Key': 'RiItGqqcVzAEEqp3DXE0dg==qROxANZdhJzXDNjj'},
-    contentType: 'application/json',
-    success: function(result) {
-        console.log(result);
-        document.getElementById('ibu').innerHTML = `${result[0].name}`;
-    },
-    error: function ajaxError(jqXHR) {
-        console.error('Error: ', jqXHR.responseText);
-    }
+let ibuKota;
+
+fetch(`https://www.emsifa.com/api-wilayah-indonesia/api/regencies/19.json`)
+  .then((response) => response.json())
+  .then((capital) => {
+  ibuKota = capital;
+  console.log(capital);
+  let ganti = document.getElementById("ibu");
+  let nama = ibuKota[6].name;
+  ganti.innerHTML = `${nama}`;
 });
+
 
 //API Youtube Video
 let API_KEY = "AIzaSyDKqZym98vyfQ_2tvmUtQV5xJAoTpDDUn0";
@@ -86,19 +84,18 @@ function onPlayerReady(event) {
 }
 
 //Time API
-const city = "jakarta";
-$.ajax({
-  method: "GET",
-  url: "https://api.api-ninjas.com/v1/worldtime?city=" + city,
-  headers: { "X-Api-Key": "RiItGqqcVzAEEqp3DXE0dg==qROxANZdhJzXDNjj" },
-  contentType: "application/json",
-  success: function (result) {
-        console.log(result);
-        $("#date").text(result.date);
-    },
-    error: function ajaxError(jqXHR) {
-    console.error("Error: ", jqXHR.responseText);
-  },
+let time;
+
+fetch("http://worldtimeapi.org/api/ip")
+  .then((response) => response.json())
+  .then((waktu) => {
+  time = waktu;
+  console.log(time);
+  let tgl = "";
+  for(let x = 0; x < 10; x++){
+    tgl += time.datetime[x];
+  }
+  document.getElementById('date').innerHTML = tgl;
 });
 
 //Font API
