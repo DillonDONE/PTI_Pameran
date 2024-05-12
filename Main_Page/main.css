@@ -45,8 +45,9 @@
 
 .konten {
     margin-top: 2rem;
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 5px;
+    text-align: center;
 }
 
 .map-container {
