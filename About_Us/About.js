@@ -34,34 +34,16 @@ fetch('https://www.emsifa.com/api-wilayah-indonesia/api/provinces.json')
     ganti.innerHTML = `${nama}`;
 });
 
-let API_KEY = 'AIzaSyDKqZym98vyfQ_2tvmUtQV5xJAoTpDDUn0';
+let time;
 
-let VIDEO_ID = 'iEwqEuyKLHs';
-
-let tag = document.createElement('script');
-tag.src = 'https://www.youtube.com/iframe_api';
-let firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-let player;
-function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player', {
-        height: '300',
-        width: '500',
-        videoId: VIDEO_ID,
-        playerlets: {
-            'autoplay': 1,
-            'controls': 1,
-            'showinfo': 0,
-            'rel': 0,
-            'loop': 1
-        },
-        events: {
-            'onReady': onPlayerReady
-        }
-    });
-}
-
-function onPlayerReady(event) {
-    event.target.playVideo();
-}
+fetch("http://worldtimeapi.org/api/ip")
+  .then((response) => response.json())
+  .then((waktu) => {
+  time = waktu;
+  console.log(time);
+  let tgl = "";
+  for(let x = 0; x < 10; x++){
+    tgl += time.datetime[x];
+  }
+  document.getElementById('date').innerHTML = tgl;
+});
