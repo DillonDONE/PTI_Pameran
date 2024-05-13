@@ -143,6 +143,13 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: filter 1s ease;
+}
+
+.slider:hover img{
+    filter: blur(5px);
+    cursor: pointer;
+    transition: ease-in;
 }
 
 .konten {
