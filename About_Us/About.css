@@ -1,6 +1,6 @@
 body {
     background-color: #efefee;
-    margin: 0;
+
 }
 
 .navi {
@@ -36,11 +36,6 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-}
-
-.card1 .card-image {
-    text-align: center;
-    margin-bottom: 20px;
 }
 
 .contain:hover> :not(:hover) {
@@ -275,7 +270,7 @@ body {
         padding-top: 56.25%;
     }
 
-    .slider {
+    .slid {
         display: block;
     }
 
@@ -321,20 +316,20 @@ body {
 }
 
 .btn {
-    --btn-color: rgb(3, 131, 186);
+    --btn-color: grey;
     float: right;
     padding: 16px 25px;
     font-family: Roboto, sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1;
-    color: rgb(52, 128, 186);
+    color: grey;
     background: none;
     border: none;
     outline: none;
     overflow: hidden;
     cursor: pointer;
-    filter: drop-shadow(0 2px 8px rgba(39, 94, 254, 0.32));
+    filter: drop-shadow(0 4px 10px rgba(243, 243, 243, 0.708));
     transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
@@ -440,13 +435,13 @@ body {
         flex-wrap: wrap;
         gap: 10px;
     }
-  
+
     .icon a img {
-        height: 40px; 
-        width: 40px; 
+        height: 40px;
+        width: 40px;
     }
-  
+
     .col-md-4 {
         margin-bottom: 20px;
     }
-  }
+}
