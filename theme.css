@@ -202,19 +202,23 @@
   body.dark-mode {
     background-color: #222;
     color: #fff;
+    transition: ease-in .2s;
   }
 
   body.light-mode {
     background-color: whitesmoke;
     color: #222;
+    transition: ease-in .2s;
   }
 
   .konten-putih {
     background-color: white;
     color: black;
+    transition: ease-in .2s;
 }
 
 .konten-hitam {
     background-color: rgb(61, 61, 61);
     color: white;
+    transition: ease-in .2s;
 }

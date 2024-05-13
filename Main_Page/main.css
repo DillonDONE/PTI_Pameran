@@ -79,6 +79,9 @@
     margin-top: 2rem;
     padding: 3rem;
     border-radius: 5px;
+}
+
+.konten div{
     text-align: justify;
 }
 
