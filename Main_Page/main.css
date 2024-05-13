@@ -42,7 +42,7 @@
 }
 
 .animasi2 {
-    animation: float2 1s ;
+    animation: float2 1s;
 }
 
 @keyframes float1 {
@@ -81,7 +81,7 @@
     border-radius: 5px;
 }
 
-.konten div{
+.konten div {
     text-align: justify;
 }
 
@@ -368,9 +368,7 @@
     color: #fff;
 }
 
-.frame {
-
-}
+.frame {}
 
 .text-title {
     font-size: 1.2rem;
@@ -383,7 +381,7 @@
     overflow: hidden;
     width: 100%;
 }
-  
+
 .iframe-container iframe,
 .video-container iframe {
     position: relative;
@@ -393,34 +391,34 @@
 
 @media (max-width: 768px) {
     .frame {
-      flex-direction: column;
+        flex-direction: column;
     }
-    
+
     .map-container,
     #player {
-      width: 100%;
-      height: 300px;
+        width: 100%;
+        height: 300px;
     }
-  
+
     .map-container iframe,
     #player iframe {
-      width: 100%;
-      height: 100%;
+        width: 100%;
+        height: 100%;
     }
 }
 
 
 @media (max-width: 768px) {
-  
+
     .map-container {
-      margin-bottom: 20px;
+        margin-bottom: 20px;
     }
-  
+
     #player {
-      margin-top: 20px;
+        margin-top: 20px;
     }
- 
-  }
+
+}
 
 @media (max-width: 768px) {
     .sekat {
@@ -439,8 +437,8 @@
     }
 
     .icon a img {
-        height: 40px; 
-        width: 40px; 
+        height: 40px;
+        width: 40px;
     }
 
     .col-md-4 {
