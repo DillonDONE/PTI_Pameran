@@ -130,3 +130,22 @@ header {
 .deskripsi p {
   line-height: 1.6;
 }
+
+@media (max-width: 768px) {
+  .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+  }
+
+  .icon a img {
+      height: 40px; 
+      width: 40px; 
+  }
+
+  .col-md-4 {
+      margin-bottom: 20px;
+  }
+}
