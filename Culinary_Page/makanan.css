@@ -1,69 +1,75 @@
-.gallary{
+.gallary {
     width: 100%;
     padding: 70px 0;
-border-radius: 20px;
+    border-radius: 20px;
 }
 
-.gallary .gallary_image_box{
+.gallary .gallary_image_box {
     width: 95%;
     margin: 10px auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-gap: 10px;
-border-radius: 20px;
+    border-radius: 20px;
 }
 
-.gallary .gallary_image_box .gallary_image{
+.gallary .gallary_image_box .gallary_image {
     display: flex;
     align-items: center;
     justify-content: center;
     background: black;
-border-radius: 20px;
+    border-radius: 20px;
+    position: relative;
 }
 
-.gallary .gallary_image_box .gallary_image img{
+.gallary .gallary_image_box .gallary_image img {
     width: 100%;
     transition: .3s;
+    border-radius: 20px;
 }
 
-.gallary .gallary_image_box .gallary_image:hover img{
+.gallary .gallary_image_box .gallary_image:hover img {
     opacity: 0.4;
 }
 
-.gallary .gallary_image_box .gallary_image h3{
+.gallary .gallary_image_box .gallary_image h3 {
     position: absolute;
-    font-size: 35px;
-    margin-bottom: 175px;
+    font-size: 2.5vw;
+    margin-bottom: 10%;
     color: #fac031;
     font-family: polo;
     z-index: 5;
     opacity: 0;
     transition: 0.3s;
-border-radius: 20px;
+    border-radius: 20px;
+    text-align: center;
+    width: 100%; /* Ensure h3 text does not overflow */
 }
 
-.gallary .gallary_image_box .gallary_image:hover h3{
+.gallary .gallary_image_box .gallary_image:hover h3 {
     opacity: 1;
 }
 
-.gallary .gallary_image_box .gallary_image p{
+.gallary .gallary_image_box .gallary_image p {
     position: absolute;
-    width: 400px;
-    margin-top: 30px;
+    width: 80%;
+    margin: 0px auto;
+    margin-bottom: 50px;
     text-align: justify;
     color: white;
     line-height: 22px;
     opacity: 0;
     z-index: 5;
     transition: 0.3s;
-border-radius: 20px;
+    border-radius: 20px;
+    text-align: center;
 }
 
-.gallary .gallary_image_box .gallary_image:hover p{
+.gallary .gallary_image_box .gallary_image:hover p {
     opacity: 1;
 }
 
-.gallary .gallary_image_box .gallary_image .gallary_btn{
+.gallary .gallary_image_box .gallary_image .gallary_btn {
     position: absolute;
     margin-top: 230px;
     color: #000;
@@ -74,18 +80,51 @@ border-radius: 20px;
     transform: translateY(45px);
     z-index: 5;
     transition: 0.3s;
-border-radius: 20px;
+    border-radius: 20px;
 }
 
-.gallary .gallary_image_box .gallary_image:hover .gallary_btn{
+.gallary .gallary_image_box .gallary_image:hover .gallary_btn {
     opacity: 1;
     transform: translateY(0);
-border-radius: 20px;
+    border-radius: 20px;
 }
-@media (max-width: 1200px){
-    .gallary .gallary_btn .gallary_image .gallary_image:hover .gallary_image_box{
-        text-align: justify;
-        text
 
+@media (max-width: 1200px) {
+    .gallary .gallary_image_box {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    .gallary .gallary_image_box .gallary_image h3 {
+        font-size: 30px;
+        margin-bottom: 30%;
+    }
+}
+
+@media (max-width: 992px) {
+    .gallary .gallary_image_box {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    .gallary .gallary_image_box .gallary_image h3 {
+        font-size: 25px;
+        margin-bottom: 20%;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallary .gallary_image_box {
+        grid-template-columns: 1fr 1fr;
+    }
+    .gallary .gallary_image_box .gallary_image h3 {
+        font-size: 20px; /* Adjusted size for smaller screens */
+        margin-bottom: 10%;
+    }
+}
+
+@media (max-width: 576px) {
+    .gallary .gallary_image_box {
+        grid-template-columns: 1fr;
+    }
+    .gallary .gallary_image_box .gallary_image h3 {
+        font-size: 50px; /* Adjusted size for smallest screens */
+        margin-bottom: 5%;
     }
 }
