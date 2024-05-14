@@ -123,11 +123,14 @@ header {
 }
 
 .deskripsi {
+  text-align:center;
   flex: 1 1 50%;
   padding: 20px;
+  margin-bottom: 1rem;
 }
 
 .deskripsi p {
+  text-align: justify;
   line-height: 1.6;
 }
 
