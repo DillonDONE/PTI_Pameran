@@ -91,7 +91,7 @@ header {
 }
 
 .header {
-  background-color: #727475;
+  background-color: #345566;
   color: #fff;
   text-align: center;
   padding: 10px;
@@ -162,8 +162,8 @@ header {
 }
 
 .deskripsi p {
-  text-align: justify;
-  line-height: 1.6;
+  text-align:justify;
+  line-height: 2;
 }
 
 @media (max-width: 768px) {
