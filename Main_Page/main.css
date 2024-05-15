@@ -85,17 +85,15 @@
     text-align: justify;
 }
 
-.map-container {
-    position: relative;
-    width: 100%;
-}
-
-.map-container iframe {
-    position: absolute;
+#map {
+    width: 50rem;
+    height: 17rem; 
+    border: 1px solid #ddd; 
+    margin-top: 1rem;
+    margin-right: 1rem;
+    padding: 2rem;
     top: 0;
     left: 0;
-    width: 90%;
-    height: 100%;
 }
 
 #player {
@@ -368,8 +366,6 @@
     color: #fff;
 }
 
-.frame {}
-
 .text-title {
     font-size: 1.2rem;
     margin: 0;
@@ -443,5 +439,12 @@
 
     .col-md-4 {
         margin-bottom: 20px;
+    }
+
+    #map {
+        width: 22rem;
+        height: 15rem; 
+        border: 1px solid #ddd; 
+        margin-top: 1rem;
     }
 }
