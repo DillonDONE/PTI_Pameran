@@ -260,6 +260,7 @@
 }
 
 .penamaan {
+    text-align: end;
     font-weight: bold;
 }
 
@@ -456,4 +457,8 @@
         transform: translateY(0rem);
         opacity: 1;
     }
+}
+
+.link a {
+    text-align: right;
 }
