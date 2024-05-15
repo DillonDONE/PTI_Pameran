@@ -14,6 +14,65 @@
   height: 7vh;
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  padding: 30px;
+  size-adjust: 20px;
+}
+
+.photo {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  max-width: 100cm;
+  max-height: 4cm;
+  transition: transform 0.4s ease;
+}
+
+.photo:hover img {
+  transform: scale(1.1);
+}
+
+.header {
+  background-color: #345566;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 100px;
+}
+
+.deskripsi {
+  text-align:justify;
+  flex: 1 1 50%;
+  padding: 20px;
+  margin-bottom: 1rem;
+}
+
+.deskripsi p {
+  text-align:justify;
+  line-height: 2;
+}
+
+.gambar {
+  flex: 1 1 100%;
+  padding: 20px;
+}
+
+.gambar img {
+  width: 100%;
+  display:block;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .slider-container {
   width: 100%;
   overflow: hidden;
@@ -88,6 +147,7 @@
 .container {
   position: relative;
   width: 100%;
+  
 }
 
 .teks {

@@ -5,16 +5,15 @@
   background-position: center;
 }
 
-#judulArtikel {
-  margin-top: 2rem;
-  margin-left: 2rem;
+.navi {
+  background: rgba(51, 49, 48, 0.3);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 }
 
-@media (max-width: 768px) {
-  #judulArtikel {
-    margin-top: 4rem;
-    margin-left: 1rem;
-  }
+.navbar-item.active {
+  font-weight: bold;
 }
 
 .logo {
@@ -22,13 +21,12 @@
   height: 7vh;
 }
 
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #ffffff; /* Warna latar belakang */
+  background-color: #ffffff; 
 }
 
 header {
@@ -125,17 +123,6 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.navi {
-  background: rgba(51, 49, 48, 0.3);
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-}
-
-.navbar-item.active {
-  font-weight: bold;
-}
-
 .slider-container {
   width: 100%;
   overflow: hidden;
@@ -166,7 +153,7 @@ header {
 }
 
 .deskripsi {
-  text-align:center;
+  text-align:justify;
   flex: 1 1 50%;
   padding: 20px;
   margin-bottom: 1rem;
