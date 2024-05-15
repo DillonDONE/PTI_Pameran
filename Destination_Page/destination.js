@@ -20,7 +20,7 @@ function updateSlider() {
   slider.style.transform = `translateX(${offset}px)`;
 }
 
-setInterval(nextSlide, 5000);
+setInterval(nextSlide, 2850);
 
 //API List
 //API Provinsi
@@ -37,19 +37,19 @@ fetch("https://www.emsifa.com/api-wilayah-indonesia/api/provinces.json")
   });
 
 //API Ibu Kota
-const ibuKota = 'Pangkalpinang'
+const ibuKota = "Pangkalpinang";
 $.ajax({
-    method: 'GET',
-    url: 'https://api.api-ninjas.com/v1/city?name=' + ibuKota,
-    headers: { 'X-Api-Key': 'RiItGqqcVzAEEqp3DXE0dg==qROxANZdhJzXDNjj'},
-    contentType: 'application/json',
-    success: function(result) {
-        console.log(result);
-        document.getElementById('ibu').innerHTML = `${result[0].name}`;
-    },
-    error: function ajaxError(jqXHR) {
-        console.error('Error: ', jqXHR.responseText);
-    }
+  method: "GET",
+  url: "https://api.api-ninjas.com/v1/city?name=" + ibuKota,
+  headers: { "X-Api-Key": "RiItGqqcVzAEEqp3DXE0dg==qROxANZdhJzXDNjj" },
+  contentType: "application/json",
+  success: function (result) {
+    console.log(result);
+    document.getElementById("ibu").innerHTML = `${result[0].name}`;
+  },
+  error: function ajaxError(jqXHR) {
+    console.error("Error: ", jqXHR.responseText);
+  },
 });
 
 //API Youtube Video
@@ -93,24 +93,26 @@ $.ajax({
   headers: { "X-Api-Key": "RiItGqqcVzAEEqp3DXE0dg==qROxANZdhJzXDNjj" },
   contentType: "application/json",
   success: function (result) {
-        console.log(result);
+    console.log(result);
     $("#date").text(result.date);
-    },
-    error: function ajaxError(jqXHR) {
+  },
+  error: function ajaxError(jqXHR) {
     console.error("Error: ", jqXHR.responseText);
   },
 });
 
 //Font API
-fetch("https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyCQu3hOsmx94omGUHSdWMGr6-DtjYNKDA0")
+fetch(
+  "https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyCQu3hOsmx94omGUHSdWMGr6-DtjYNKDA0"
+)
   .then((response) => response.json())
   .then((fontsData) => {
     const fonts = fontsData.items.map((item) => item.family);
-    const selectedFont = fonts[0]; 
-    document.getElementById('judul').style.fontFamily = selectedFont;
+    const selectedFont = fonts[0];
+    document.getElementById("judul").style.fontFamily = selectedFont;
   })
   .catch((error) => {
     console.error("Error fetching fonts:", error);
-});
+  });
 
 //End of API List
