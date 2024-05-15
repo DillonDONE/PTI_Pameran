@@ -23,82 +23,19 @@ function updateSlider() {
 setInterval(nextSlide, 2850);
 
 //API List
-//API Provinsi
-let provinsi;
-
-fetch("https://www.emsifa.com/api-wilayah-indonesia/api/provinces.json")
-  .then((response) => response.json())
-  .then((provinces) => {
-    provinsi = provinces;
-    console.log(provinces);
-    let ganti = document.getElementById("judul");
-    let nama = provinsi[8].name;
-    ganti.innerHTML = `${nama}`;
-  });
-
-//API Ibu Kota
-const ibuKota = "Pangkalpinang";
-$.ajax({
-  method: "GET",
-  url: "https://api.api-ninjas.com/v1/city?name=" + ibuKota,
-  headers: { "X-Api-Key": "RiItGqqcVzAEEqp3DXE0dg==qROxANZdhJzXDNjj" },
-  contentType: "application/json",
-  success: function (result) {
-    console.log(result);
-    document.getElementById("ibu").innerHTML = `${result[0].name}`;
-  },
-  error: function ajaxError(jqXHR) {
-    console.error("Error: ", jqXHR.responseText);
-  },
-});
-
-//API Youtube Video
-let API_KEY = "AIzaSyDKqZym98vyfQ_2tvmUtQV5xJAoTpDDUn0";
-
-let VIDEO_ID = "uXxUCRvRe14";
-
-let tag = document.createElement("script");
-tag.src = "https://www.youtube.com/iframe_api";
-let firstScriptTag = document.getElementsByTagName("script")[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-let player;
-function onYouTubeIframeAPIReady() {
-  player = new YT.Player("player", {
-    height: "300",
-    width: "500",
-    videoId: VIDEO_ID,
-    playerlets: {
-      autoplay: 1,
-      controls: 1,
-      showinfo: 0,
-      rel: 0,
-      loop: 1,
-    },
-    events: {
-      onReady: onPlayerReady,
-    },
-  });
-}
-
-function onPlayerReady(event) {
-  event.target.playVideo();
-}
-
 //Time API
-const city = "jakarta";
-$.ajax({
-  method: "GET",
-  url: "https://api.api-ninjas.com/v1/worldtime?city=" + city,
-  headers: { "X-Api-Key": "RiItGqqcVzAEEqp3DXE0dg==qROxANZdhJzXDNjj" },
-  contentType: "application/json",
-  success: function (result) {
-    console.log(result);
-    $("#date").text(result.date);
-  },
-  error: function ajaxError(jqXHR) {
-    console.error("Error: ", jqXHR.responseText);
-  },
+let time;
+
+fetch("http://worldtimeapi.org/api/ip")
+  .then((response) => response.json())
+  .then((waktu) => {
+  time = waktu;
+  console.log(time);
+  let tgl = "";
+  for(let x = 0; x < 10; x++){
+    tgl += time.datetime[x];
+  }
+  document.getElementById('date').innerHTML = tgl;
 });
 
 //Font API

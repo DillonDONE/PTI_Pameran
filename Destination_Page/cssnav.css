@@ -10,6 +10,37 @@
   height: 6vh;
 }
 
+.animasi1 {
+  animation: float1 1s;
+}
+
+.animasi2 {
+  animation: float2 1s;
+}
+
+@keyframes float1 {
+  0% {
+      transform: translateY(-3rem);
+      opacity: 0;
+  }
+
+  100% {
+      transform: translateY(0rem);
+      opacity: 1;
+  }
+}
+
+@keyframes float2 {
+  0% {
+      transform: translateY(3rem);
+      opacity: 0;
+  }
+
+  100% {
+      transform: translateY(0rem);
+      opacity: 1;
+  }
+}
 .slider-container {
   width: 100%;
   overflow: hidden;
