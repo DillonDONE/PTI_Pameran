@@ -220,16 +220,24 @@
 }
 
 .map-container {
-  position:relative;
-  width: 100%;
-  justify-content: center;
-  display: flex;
-  align-items: center;
+  margin-left: 1rem;
 }
 
 .map-container iframe {
-  width: 850px;
-  height: 350px;
+  width: 400px;
+  height: 400px;
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+}
+
+.iframe-container iframe {
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 0;
 }
 
 .text-body {
@@ -319,4 +327,9 @@
   .col-md-4 {
     margin-bottom: 20px;
   }
+
+  .map-container {
+    margin-left: 0rem;
+    margin-top: -4rem;
+}
 }
