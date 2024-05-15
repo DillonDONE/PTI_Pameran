@@ -37,19 +37,3 @@ fetch("http://worldtimeapi.org/api/ip")
   }
   document.getElementById('date').innerHTML = tgl;
 });
-
-//Font API
-fetch(
-  "https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyCQu3hOsmx94omGUHSdWMGr6-DtjYNKDA0"
-)
-  .then((response) => response.json())
-  .then((fontsData) => {
-    const fonts = fontsData.items.map((item) => item.family);
-    const selectedFont = fonts[0];
-    document.getElementById("judul").style.fontFamily = selectedFont;
-  })
-  .catch((error) => {
-    console.error("Error fetching fonts:", error);
-  });
-
-//End of API List
