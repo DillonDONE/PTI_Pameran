@@ -17,6 +17,12 @@
   }
 }
 
+.logo {
+  width: 6vh;
+  height: 7vh;
+}
+
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -125,6 +131,11 @@ header {
   width: 100%;
   z-index: 1000;
 }
+
+.navbar-item.active {
+  font-weight: bold;
+}
+
 .slider-container {
   width: 100%;
   overflow: hidden;
