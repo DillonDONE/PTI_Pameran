@@ -21,19 +21,6 @@ function updateSlider() {
 
 setInterval(nextSlide, 2000); 
 
-let provinsi;
-
-fetch('https://www.emsifa.com/api-wilayah-indonesia/api/provinces.json')
-.then(response => response.json())
-.then(provinces => {
-    provinsi = provinces;
-    console.log(provinsi);
-    
-    let ganti = document.getElementById('judul');
-    let nama = provinsi[8].name;
-    ganti.innerHTML = `${nama}`;
-});
-
 let time;
 
 fetch("http://worldtimeapi.org/api/ip")
