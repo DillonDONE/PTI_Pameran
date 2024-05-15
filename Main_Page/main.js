@@ -49,6 +49,33 @@ fetch(`https://www.emsifa.com/api-wilayah-indonesia/api/regencies/19.json`)
   ganti.innerHTML = `${nama}`;
 });
 
+//API Maps
+let map;
+
+      async function initMap() {
+        const position = { lat: -2.631577754860956, lng: 106.44616126487077 };
+        const { Map } = await google.maps.importLibrary("maps");
+        const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+        map = new Map(document.getElementById("map"), {
+          zoom: 7,
+          center: position,
+          mapId: "DEMO_MAP_ID",
+        });
+
+        const marker = new AdvancedMarkerElement({
+          map: map,
+          position: position,
+          title: "Lengkuas Island",
+        });
+
+        marker.addListener("click", () => {
+          const url = `https://www.google.com/maps/dir/?api=1&destination=${position.lat},${position.lng}`;
+          window.open(url, '_blank');
+        });
+      }
+
+      initMap();
+
 
 //API Youtube Video
 let API_KEY = "AIzaSyDKqZym98vyfQ_2tvmUtQV5xJAoTpDDUn0";
