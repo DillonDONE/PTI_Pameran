@@ -1,31 +1,51 @@
+.body{
+    background-color: #616161;
+}
+
 .gallary {
     width: 100%;
-    padding: 70px 0;
+    padding: 70px ;
     border-radius: 20px;
 }
 
-.gallary .gallary_image_box {
-    width: 95%;
-    margin: 10px auto;
+.box_bg {
+    padding-top: 20px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    padding-bottom: 50px;
+    margin-top: -20px;
+    margin-bottom: 5px;
+    max-width: 700px;
+}
+
+.gallary_image_box {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-gap: 10px;
     border-radius: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
 }
 
 .gallary .gallary_image_box .gallary_image {
-    display: flex;
+    display: inline-block;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background: black;
     border-radius: 20px;
     position: relative;
+    overflow: hidden;
 }
 
 .gallary .gallary_image_box .gallary_image img {
     width: 100%;
     transition: .3s;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .gallary .gallary_image_box .gallary_image:hover img {
@@ -34,16 +54,16 @@
 
 .gallary .gallary_image_box .gallary_image h3 {
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 2.5vw;
-    margin-bottom: 10%;
     color: #fac031;
-    font-family: polo;
+    font-family: 'Polo', sans-serif; /* Use font family with fallback */
     z-index: 5;
     opacity: 0;
     transition: 0.3s;
-    border-radius: 20px;
     text-align: center;
-    width: 100%; /* Ensure h3 text does not overflow */
+    width: 100%;
 }
 
 .gallary .gallary_image_box .gallary_image:hover h3 {
@@ -52,16 +72,16 @@
 
 .gallary .gallary_image_box .gallary_image p {
     position: absolute;
+    bottom: 20px;
     width: 80%;
-    margin: 0px auto;
-    margin-bottom: 50px;
+    margin: 0 auto;
     text-align: justify;
-    color: white;
+    background-color: #949494;
+    color: #030303;
     line-height: 22px;
     opacity: 0;
     z-index: 5;
     transition: 0.3s;
-    border-radius: 20px;
     text-align: center;
 }
 
@@ -69,53 +89,30 @@
     opacity: 1;
 }
 
-.gallary .gallary_image_box .gallary_image .gallary_btn {
-    position: absolute;
-    margin-top: 230px;
-    color: #000;
-    background: #fac031;
-    padding: 7px 25px;
-    text-decoration: none;
-    opacity: 0;
-    transform: translateY(45px);
-    z-index: 5;
-    transition: 0.3s;
-    border-radius: 20px;
-}
-
-.gallary .gallary_image_box .gallary_image:hover .gallary_btn {
-    opacity: 1;
-    transform: translateY(0);
-    border-radius: 20px;
-}
-
 @media (max-width: 1200px) {
     .gallary .gallary_image_box {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
     .gallary .gallary_image_box .gallary_image h3 {
         font-size: 30px;
-        margin-bottom: 30%;
     }
 }
 
 @media (max-width: 992px) {
     .gallary .gallary_image_box {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
     .gallary .gallary_image_box .gallary_image h3 {
         font-size: 25px;
-        margin-bottom: 20%;
     }
 }
 
 @media (max-width: 768px) {
     .gallary .gallary_image_box {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     }
     .gallary .gallary_image_box .gallary_image h3 {
-        font-size: 20px; /* Adjusted size for smaller screens */
-        margin-bottom: 10%;
+        font-size: 20px;
     }
 }
 
@@ -124,7 +121,6 @@
         grid-template-columns: 1fr;
     }
     .gallary .gallary_image_box .gallary_image h3 {
-        font-size: 50px; /* Adjusted size for smallest screens */
-        margin-bottom: 5%;
+        font-size: 18px; 
     }
 }
