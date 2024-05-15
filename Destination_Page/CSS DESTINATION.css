@@ -112,15 +112,9 @@ header {
 }
 
 .gambar {
-  flex: 1 1 100%;
+  text-align: center;
+  align-items: center;
   padding: 20px;
-}
-
-.gambar img {
-  width: 100%;
-  display:block;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .slider-container {
