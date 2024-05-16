@@ -193,13 +193,13 @@
 .icon a img:hover {
   filter: grayscale(0);
   transform: scale(1.1);
-  transition: ease-in 0.1s;
+  transition: ease-in .1s;
 }
 
 .icon a img:not(:hover) {
   filter: grayscale(1);
   transform: scale(1);
-  transition: ease-in 0.1s;
+  transition: ease-in .1s;
 }
 
 .card-info {
