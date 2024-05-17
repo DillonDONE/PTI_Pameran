@@ -99,6 +99,29 @@
     }
 }
 
+/* @media (max-width: 375px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 10px; /* Further reduce margin for very small screens */
+        grid-gap: 10px; /* Further reduce grid gap for very small screens */
+    }
+    .box {
+        width: calc(100% - 20px); /* Adjust width to ensure it fits within the screen */
+        height: auto; /* Adjust height to content */
+        margin: 0 auto; /* Center the box */
+    }
+    .container {
+        padding: 0 10px; /* Add padding to container for better spacing */
+    }
+    .h1 {
+        padding-top: 30px; /* Adjust padding for smaller screens */
+    }
+    .icon a img {
+        height: 40px; /* Smaller icons */
+        width: 40px;  /* Smaller icons */
+    }
+} */
+
 .navi {
     background: rgba(51, 49, 48, 0.3);
     position: fixed;
