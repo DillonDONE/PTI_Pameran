@@ -159,20 +159,83 @@ header {
 }
 
 @media (max-width: 768px) {
+  .frame {
+      flex-direction: column;
+  }
+
+  .map-container,
+  #player {
+      width: 100%;
+      height: 300px;
+  }
+
+  .map-container iframe,
+  #player iframe {
+      width: 100%;
+      height: 100%;
+  }
+
   .icon {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
       gap: 10px;
-  }
+    }
+  
+    .icon a img {
+      height: 40px;
+      width: 40px;
+    }
 
-  .icon a img {
-      height: 40px; 
-      width: 40px; 
-  }
-
-  .col-md-4 {
+    .col-md-4 {
       margin-bottom: 20px;
+    }
+
+    #ibu {
+      font-size: smaller;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+  .map-container {
+      margin-bottom: 20px;
+  }
+
+  #player {
+      margin-top: 20px;
+  }
+
+  #map {
+      width: 22rem;
+      height: 15rem; 
+      border: 1px solid #ddd; 
+      margin-top: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sekat {
+      flex: 0 0 100%;
+  }
+}
+
+@media (min-width: 320px) {
+  #map {
+      width: 14rem;
+      height: 15rem; 
+      border: 1px solid #ddd; 
+      margin-top: 1rem;
+  }
+}
+
+@media (min-width: 375px) {
+  #map {
+      width: 17.5rem;
+      height: 15rem; 
+      border: 1px solid #ddd; 
+      margin-top: 1rem;
   }
 }

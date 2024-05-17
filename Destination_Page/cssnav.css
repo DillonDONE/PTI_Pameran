@@ -50,14 +50,14 @@
 }
 
 .deskripsi {
-  text-align:justify;
+  text-align: justify;
   flex: 1 1 50%;
   padding: 20px;
   margin-bottom: 1rem;
 }
 
 .deskripsi p {
-  text-align:justify;
+  text-align: justify;
   line-height: 2;
 }
 
@@ -68,7 +68,7 @@
 
 .gambar img {
   width: 100%;
-  display:block;
+  display: block;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -106,25 +106,25 @@
 
 @keyframes float1 {
   0% {
-      transform: translateY(-3rem);
-      opacity: 0;
+    transform: translateY(-3rem);
+    opacity: 0;
   }
 
   100% {
-      transform: translateY(0rem);
-      opacity: 1;
+    transform: translateY(0rem);
+    opacity: 1;
   }
 }
 
 @keyframes float2 {
   0% {
-      transform: translateY(3rem);
-      opacity: 0;
+    transform: translateY(3rem);
+    opacity: 0;
   }
 
   100% {
-      transform: translateY(0rem);
-      opacity: 1;
+    transform: translateY(0rem);
+    opacity: 1;
   }
 }
 
@@ -193,13 +193,13 @@
 .icon a img:hover {
   filter: grayscale(0);
   transform: scale(1.1);
-  transition: ease-in .1s;
+  transition: ease-in 0.1s;
 }
 
 .icon a img:not(:hover) {
   filter: grayscale(1);
   transform: scale(1);
-  transition: ease-in .1s;
+  transition: ease-in 0.1s;
 }
 
 .card-info {
@@ -331,5 +331,5 @@
   .map-container {
     margin-left: 0rem;
     margin-top: -4rem;
-}
+  }
 }
