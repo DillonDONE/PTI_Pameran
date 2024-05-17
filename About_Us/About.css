@@ -301,7 +301,7 @@
     .profil1 img {
         display: flex;
         align-items: center;
-        margin-left: 0px;
+        margin-right: -30px;
     }
 
     .container {
