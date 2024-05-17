@@ -114,6 +114,15 @@ body {
     margin: 20px auto;
     max-width: 1000px;
 }
+.light-mode .konten-hitam {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.dark-mode .konten-putih {
+    color: #ffffff;
+    background-color: #000000;
+}
 
 @media (max-width: 1200px) {
     .gallary .gallary_image_box {
