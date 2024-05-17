@@ -1,6 +1,4 @@
-
-
-.body {
+body {
     background-color: #616161;
 }
 
@@ -12,12 +10,13 @@
 }
 
 .wrapper {
-    margin: 150px auto;
-    width: 70%;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
 }
 
 .gambar {
-    max-width: 320px;
+    max-width: 280px;
     float: left;
     border: 3px solid #fff;
     border-radius: 10px;
@@ -40,32 +39,23 @@
 
 .gallary {
     width: 100%;
-    padding: 70px ;
+    padding: 20px;
     border-radius: 20px;
-}
-
-.box_bg {
-    padding-top: 2px;
-    margin: 0 auto;
-    background-color: white;
-    border-radius: 10px;
-    padding-bottom: 1px;
-    max-width: 1000px;
 }
 
 .gallary_image_box {
     width: 100%;
     height: 100%;
-    padding: 30px;
+    padding: 20px;
     margin: auto;
     display: grid;
     grid-gap: 10px;
     border-radius: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
 .gallary .gallary_image_box .gallary_image {
-    display: inline-block;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -77,7 +67,7 @@
 
 .gallary .gallary_image_box .gallary_image img {
     width: 100%;
-    transition: .3s;
+    transition: 0.3s;
     border-radius: 20px;
     cursor: pointer;
 }
@@ -92,7 +82,7 @@
     transform: translateY(-50%);
     font-size: 2.5vw;
     color: #fac031;
-    font-family: 'Polo', sans-serif; /* Use font family with fallback */
+    font-family: 'Polo', sans-serif;
     z-index: 5;
     opacity: 0;
     transition: 0.3s;
@@ -123,12 +113,27 @@
     opacity: 1;
 }
 
+.light-mode .konten-hitam {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.dark-mode .konten-putih {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.box_bg {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+/* Responsive adjustments */
 @media (max-width: 1200px) {
     .gallary .gallary_image_box {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    }
-    .gallary .gallary_image_box .gallary_image h3 {
-        font-size: 30px;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     }
 }
 
@@ -136,8 +141,11 @@
     .gallary .gallary_image_box {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
-    .gallary .gallary_image_box .gallary_image h3 {
-        font-size: 25px;
+    .text_box span {
+        font-size: 24px;
+    }
+    .text_box p {
+        font-size: 14px;
     }
 }
 
@@ -145,8 +153,8 @@
     .gallary .gallary_image_box {
         grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     }
-    .gallary .gallary_image_box .gallary_image h3 {
-        font-size: 20px;
+    .gambar {
+        width: 200px;
     }
 }
 
@@ -155,6 +163,32 @@
         grid-template-columns: 1fr;
     }
     .gallary .gallary_image_box .gallary_image h3 {
-        font-size: 18px; 
+        font-size: 18px;
+    }
+    .gambar {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+    .text_box {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        width: 95%;
+    }
+    .gallary {
+        padding: 15px;
+    }
+    .gallary .gallary_image_box {
+        padding: 10px;
+    }
+    .text_box span {
+        font-size: 20px;
+    }
+    .text_box p {
+        font-size: 12px;
     }
 }
