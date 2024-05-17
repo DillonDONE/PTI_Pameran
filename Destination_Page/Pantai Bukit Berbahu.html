@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="cssnav.css" />
     <link rel="stylesheet" href="../theme.css" />
-    <link rel="stylesheet" href="CSS DESTINATION.css" />
+    <link rel="stylesheet" href="picture.css">
   </head>
 
   <body class="light-mode">
@@ -19,7 +19,7 @@
         <div class="container">
           <a class="navbar-brand" href="../main.html">
             <img src="../About_Us/Pic/logo.png" width="40px" alt="Logo" />
-            <span id="judul"></span>
+            <span id="judul">MUSEUM KATA ANDREA HIRATA</span>
           </a>
           <button
             class="navbar-toggler"
@@ -95,7 +95,7 @@
       </nav>
     </header>
     <main>
-      <div class="slider-container">
+      <div class="slider-container animasi1">
         <div class="slider">
           <div class="slide">
             <img
@@ -124,70 +124,34 @@
         </div>
       </div>
 
-      <div class="container konten konten-putih">
-        <div class="gambar">
-          <img
-            src="../Destination_Page/Pic_Des/Pantai 3.jpg"
-            alt="Pantai Lengkuas"
-          />
-        </div>
-        <article class="deskripsi">
-          <h2 style="text-align: center">PANTAI BUKIT BERBAHU</h2>
-          <p>
-            Pantai Bukit Berbahu adalah salah satu permata tersembunyi di Indonesia, menawarkan pengunjung keindahan alam yang luar biasa dan pengalaman tak terlupakan. Terletak di kawasan yang masih alami, jauh dari keramaian, pantai ini menjadi destinasi ideal bagi mereka yang mencari ketenangan dan keindahan alam yang autentik.
-          </p>
-          <p>
-            Pantai Bukit Berbahu dikelilingi perbukitan hijau menambah pesona dan keunikannya. Dari puncak gunung, pengunjung dapat menikmati panorama laut biru luas dan pantai berpasir putih halus yang menakjubkan. Perpaduan perbukitan dan pantai menciptakan pemandangan menakjubkan Instagrammable yang sangat cocok untuk fotografi alam.
-
-          </p>
-          <p>
-           - aktivitas yang menyenangkan
-
-            Aktivitas seru di Pantai Bukit Berbahu
-          </p>
-          <p>
-            1. Snorkeling dan Diving: Perairan jernih dan terumbu karang yang sehat membuat pantai ini cocok untuk snorkeling dan diving. Nikmati keanekaragaman hayati bawah laut dan lihat beragam ikan berwarna-warni dan karang yang menakjubkan.
-          </p>
-          <p>2. Lintas Alam dan Trekking: Perbukitan di sekitar pantai menawarkan rute pendakian yang menantang namun bermanfaat, dan pemandangan yang menakjubkan menawarkan perspektif berbeda tentang keindahan pantai.
-          </p>
-          <p>
-            3. Bersantai di pinggir pantai Pasir putihnya yang lembut menjadi spot ideal untuk berjemur atau piknik, suara deburan ombak dan angin sepoi-sepoi menambah suasana santai.
-          </p>
-          <p>
-              Tip Berkunjung
-          </p>
-          <p>
-            - Waktu terbaik berkunjung: saat musim kemarau (April hingga Oktober) saat cuaca cerah dan laut tenang.
-            - Persiapan: Jika memungkinkan, bawalah perlengkapan snorkeling atau menyelam sendiri, serta air minum dan makanan ringan.
-            - Etika lingkungan:Jaga kebersihan pantai dengan tidak membuang sampah sembarangan, dan hindari merusak terumbu karang atau ekosistem setempat.
-          </p>
-            
-          <p>
-            Pulau ini merupakan surga bagi penggemar selancar permukaan dan
-            menyelam. Kamu bahkan bisa menemukan kapal karam Indomarine di
-            sekitar sini. Para penjaga mercusuar di pulau ini juga berperan
-            dalam pelestarian penyu hijau yang langka. Jadi, jangan lewatkan
-            kesempatan untuk menjelajahi keindahan bawah laut dan ikuti jejak
-            petualangan di Pulau ini.
-          </p>
-          <p>
-            Untuk menjaga kelestarian pulau ini, yuk kita jaga kebersihan
-            bersama! Saat berkunjung, pastikan kamu membawa air minum sendiri
-            dan membawa pulang semua sampah yang dihasilkan. Kita bisa membantu
-            menjaga lingkungan dengan tindakan sederhana ini, dan pastikan
-            sampah dibuang di tempat yang tepat saat kembali ke daratan Pulau
-            Belitung. Ayo bersama-sama jaga kebersihan dan keindahan alam pulau
-            ini.
-          </p>
-          <div class="d-flex justify-content-center frame">
+      <div class="konten" style="margin-top: 1rem; text-align: right; margin-right: 1.5rem;">
+        <h6 id="date" class="animasi2"></h6>
+      </div>
+      
+      <article class="deskripsi container konten konten-putih animasi2" style="padding: 3rem;">
+        <h2 style="text-align: center">Museum Kata Andrea Hirata</h2><br>
+        <div class="d-flex">
+          <div class="carousel">
+            <button class="arrow left" onclick="previousImage()">&#10094;</button>
+              <div class="carousel-inner">   
+                <img src="./Pic_Des/museum5.jpg" class="active">
+                <img src="https://indonesiakaya.com/wp-content/uploads/2020/10/4__Ruang_utama_yang_nyaman_untuk_pengunjung_yang_ingin_duduk_bersantai_sambil_membaca_buku_yang_diletakan_di_atas_meja_edit.jpg">
+                <img src="https://indonesiatraveler.id/wp-content/uploads/2020/05/Museum-Belitung-Museum-Kata-Andrea-Hirata.jpg">
+                <img src="https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1514892937/q1b1jsvcfx5tmf2bymy3.jpg">
+              </div>
+            <button class="arrow right" onclick="nextImage()">&#10095;</button>
+          </div>
           <div class="map-container iframe-container">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15942.786662951325!2d107.61742334853189!3d-2.6045593723254457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e176a514bcdd00b%3A0xdb4514764fccf1eb!2sPantai%20Bukit%20Berahu!5e0!3m2!1sid!2sid!4v1715765042814!5m2!1sid!2sid"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.470005273229!2d108.16410719999999!3d-2.9670037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e11292b40f79cd1%3A0x70792b2e73da4e7c!2sMuseum%20Kata%20Andrea%20Hirata!5e0!3m2!1sid!2sid!4v1715711742374!5m2!1sid!2sid"
               allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-          <div id="player" class="iframe-container video-container"></div>
-        </article>
-      </div>
+        </div>
+        <br>
+        <p>
+          Museum Kata Andrea Hirata adalah museum khusus yang koleksinya berkaitan dengan sastra dunia dan sastra Indonesia. Pendirinya adalah Andrea Hirata. Museum ini diresmikan pada bulan November 2012. Kegiatan utama di dalam museum ialah pengenalan tentang sastra, perkembangan sastra di Indonesia, dan pentingnya dunia sastra bagi kehidupan manusia. Di dalam museum juga tersedia informasi mengenai proses panjang penerbitan novel berjudul Laskar Pelangi hingga pembuatannya menjadi film. Pembangunan Museum Kata Andrea Hirata adalah memberikan inspirasi kepada pemuda Indonesia agar berjuang meraih cita-cita seperti yang dikisahkan di dalam novel Laskar Pelangi. Museum ini beralamat di Jalan Laskar Pelangi 10, Gantong, Belitung Timur. Titik koordinatnya yaitu 2°58’01.2” Lintang Selatan dan 108°09’50.8” Bujur Timur. Museum ini dapat dicapai melalui tiga rute perjalanan dengan alat transportasi yang berbeda. Pertama, dari Bandar Udara Internasional H.A.S. Hanandjoeddin dengan jarak tempuh sejauh 60,1 kilometer. Kedua, dari Pelabuhan Tanjung Pandan dengan jarak tempuh sejauh 70,9 kilometer. Ketiga, dari Terminal Manggar dengan jarak tempuh sejauh 19,4 kilometer.
+        </p>
+      </article>
     </main>
     <br /><br />
 
@@ -204,13 +168,13 @@
           </div>
           <div class="col-md-4">
             <h5 class="mb-4">Ikuti Kami</h5>
-            <p>Dapatkan update terbaru melalui media sosial kacmi:</p>
+            <p>Dapatkan update terbaru melalui media sosial kami:</p>
             <div class="d-flex icon">
               <a href="#">
-                <img
-                  src="https://seeklogo.com/images/Y/youtube-square-logo-3F9D037665-seeklogo.com.png"
-                  alt="YouTube"
-                />
+                <a href="#">
+                  <img src="https://cdn.punchng.com/wp-content/uploads/2023/07/24084806/Twitter-new-logo.jpeg"
+                    alt="X">
+                </a>
               </a>
               <a href="#">
                 <img
@@ -243,9 +207,10 @@
     </footer>
 
     <script src="../theme.js"></script>
+    <script src="picture.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="main.js"></script>
+    <script src="destination.js"></script>
   </body>
 </html>
