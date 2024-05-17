@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kepulauan Bangka Belitung</title>
+    <title>Destinasi | Pantai Tanjung Kelayang</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="cssnav.css" />
     <link rel="stylesheet" href="../theme.css" />
-    <link rel="stylesheet" href="CSS DESTINATION.css" />
+    <link rel="stylesheet" href="picture.css" />
   </head>
 
   <body class="light-mode">
@@ -19,7 +19,7 @@
         <div class="container">
           <a class="navbar-brand" href="../main.html">
             <img src="../About_Us/Pic/logo.png" width="40px" alt="Logo" />
-            <span id="judul"></span>
+            <span id="judul">PANTAI TANJUNG KELAYANG</span>
           </a>
           <button
             class="navbar-toggler"
@@ -95,13 +95,14 @@
       </nav>
     </header>
     <main>
-      <div class="slider-container">
+      <div class="slider-container animasi1">
         <div class="slider">
           <div class="slide">
             <img
-              src="../Destination_Page/Pic_Des/theme1.jpg"
+              src="https://travelspromo.com/wp-content/uploads/2023/01/Keindahan-pasir-putih-sekitar-pantai-tanjung-kelayang-belitung.jpg"
               alt="Destination 1"
             />
+            <h2 class="caption">Pantai Tanjung Kelayang</h2>
           </div>
           <div class="slide">
             <img
@@ -123,63 +124,86 @@
           </div>
         </div>
       </div>
-      <div class="header mt-0">
-        <h1>MUSEUM KATA ANDREA HIRATA</h1>
+
+      <div
+        class="konten"
+        style="margin-top: 1rem; text-align: right; margin-right: 1.5rem"
+      >
+        <h6 id="date" class="animasi2"></h6>
       </div>
 
-      <div class="container konten konten-putih">
-        <div class="gambar">
-          <img
-            src="../Destination_Page/Pic_Des/museum5.jpg"
-            alt="Pantai Lengkuas"
-          />
-        </div>
-        <article class="deskripsi">
-          <h2 style="text-align: center">TENTANG MUSEUM KATA ANDREA HIRATA</h2>
-          <p>
-            Pulau Lengkuas adalah salah sebuah pulau di Provinsi Kepulauan
-            Bangka Belitung. Letaknya di sebelah utara Pantai Tanjung Kelayang,
-            Kecamatan Sijuk, Kabupaten Belitung. Pulau ini merupakan satu dari
-            ratusan pulau yang mengelilingi Pulau Belitung. Daya tarik utama di
-            pulau ini adalah sebuah mercusuar tua yang dibangun oleh pemerintah
-            Kolonial Belanda pada tahun 1882. Hingga saat ini, mercusuar
-            tersebut masih berfungsi sebagai penuntun lalu lintas kapal yang
-            melewati atau keluar masuk Pulau Belitung.
-          </p>
-          <p>
-            Di Pulau Lengkuas, kamu akan menemukan batu granit yang megah, pasir
-            putih yang lembut, dan air laut yang begitu jernih. Pulau kecil ini
-            bisa dielilingi dalam waktu hanya 20 menit, dan kamu bisa
-            mengunjunginya dengan perahu sewaan dari Tanjung Binga atau Tanjung
-            Kelayang. Nikmati keindahan alamnya yang memikat dan kesegaran
-            udaranya yang menyegarkan.
-          </p>
-          <p>
-            Pulau ini merupakan surga bagi penggemar selancar permukaan dan
-            menyelam. Kamu bahkan bisa menemukan kapal karam Indomarine di
-            sekitar sini. Para penjaga mercusuar di pulau ini juga berperan
-            dalam pelestarian penyu hijau yang langka. Jadi, jangan lewatkan
-            kesempatan untuk menjelajahi keindahan bawah laut dan ikuti jejak
-            petualangan di Pulau ini.
-          </p>
-          <p>
-            Untuk menjaga kelestarian pulau ini, yuk kita jaga kebersihan
-            bersama! Saat berkunjung, pastikan kamu membawa air minum sendiri
-            dan membawa pulang semua sampah yang dihasilkan. Kita bisa membantu
-            menjaga lingkungan dengan tindakan sederhana ini, dan pastikan
-            sampah dibuang di tempat yang tepat saat kembali ke daratan Pulau
-            Belitung. Ayo bersama-sama jaga kebersihan dan keindahan alam pulau
-            ini.
-          </p>
-          <div class="d-flex justify-content-center frame">
+      <article
+        class="deskripsi container konten konten-putih animasi2"
+        style="padding: 3rem"
+      >
+        <h2 style="text-align: center">Pantai Tanjung Kelayang</h2>
+        <br />
+        <div class="d-flex">
+          <div class="carousel">
+            <button class="arrow left" onclick="previousImage()">
+              &#10094;
+            </button>
+            <div class="carousel-inner">
+              <img src="./Pic_Des/pantai6.jpg" class="active" />
+              <img
+                src="https://sitimustiani.com/wp-content/uploads/2022/06/Pantai-Tanjung-Kelayang.jpg"
+              />
+              <img
+                src="https://v1.indonesia.travel/content/dam/indtravelrevamp/id-id/ide-liburan/bagai-kepingan-surga-kunjungi-5-spot-ciamik-di-tanjung-kelayang/update/tanjung-tinggi.jpg"
+              />
+              <img
+                src="https://www.scmedia.id/wp-content/uploads/2021/02/theworldtravelguy.com_bangka-belitung-island-travel-guide-hotels-best-things-to-do.jpg"
+              />
+              <img
+                src="https://cdn.idntimes.com/content-images/community/2022/09/fromandroid-80d0176a8b4ba469c7f7c7ce2c47cf39.jpg"
+              />
+            </div>
+            <button class="arrow right" onclick="nextImage()">&#10095;</button>
+          </div>
           <div class="map-container iframe-container">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7971.675362072782!2d107.6686282414844!3d-2.5596088215067483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e174209273af563%3A0xc9c43cbde970f945!2sPantai%20Tanjung%20Kelayang!5e0!3m2!1sid!2sid!4v1715762581644!5m2!1sid!2sid"
-              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.839930601982!2d107.67037167559631!3d-2.558885347366378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e174209273af563%3A0xc9c43cbde970f945!2sPantai%20Tanjung%20Kelayang!5e0!3m2!1sid!2sid!4v1715965527039!5m2!1sid!2sid"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
-          <div id="player" class="iframe-container video-container"></div>
-        </article>
-      </div>
+        </div>
+        <br />
+        <p>
+          Pantai Tanjung Kelayang merupakan salah satu pantai yang terletak di
+          Kepulauan Bangka Belitung. Lokasinya berada di Kecamatan Sijuk dan
+          berjarak sekitar 27 kilometer dari Tanjung Pandan yang merupakan ibu
+          kota Kabupaten Belitung. Pantai ini memiliki puluhan batu granit
+          raksasa, yang bentuknya sangat mirip dengan kepala burung garuda.
+          Menurut cerita rakyat setempat, batu tersebut dipercaya memiliki
+          kekuatan mistis. Nama “Kelayang” bisa dikatakan merupakan nama yang
+          diambil dari salah satu jenis burung yang terdapat di pantai ini.
+        </p>
+        <p>
+          Pantai ini memiliki air laut dengan gradasi warna bening kehijauan di
+          tepi pantai yang dangkal dan perlahan-lahan berwarna biru gelap.Ombak
+          pantainya tidak terlalu tinggi sehingga banyak pengunjung yang tidak
+          segan-segan untuk berenang.Keunikan Pantai Tanjung Kelayang lainnya
+          adalah pantai terlihat lebih luas saat air laut surut pada pagi hari.
+          Pantai Tanjung Kelayang memiliki surut air laut yang jauh dari pantai.
+        </p>
+        <center>
+          <img
+            src="https://www.iwarebatik.org/wp-content/uploads/2019/11/kly1.jpg"
+            alt=""
+            class="fotohorizontal"
+          />
+        </center><br>
+        <p>
+          Seperti halnya pantai di Belitung lainnya, Pantai Tanjung Kelayang
+          memiliki batu granit yang berada di ujung tanjung. Pengunjung yang
+          berani dapat naik batu tersebut untuk melihat seluruh pemandangan
+          Tanjung Kelayang. Salah satu yang terkenal adalah batu granit raksasa
+          yang bentuknya mirip kepala burung. Konon, batu yang terletak di lepas
+          pantai tersebut merupakan asal-usul nama Tanjung Kelayang.
+        </p>
+      </article>
     </main>
     <br /><br />
 
@@ -196,13 +220,15 @@
           </div>
           <div class="col-md-4">
             <h5 class="mb-4">Ikuti Kami</h5>
-            <p>Dapatkan update terbaru melalui media sosial kacmi:</p>
+            <p>Dapatkan update terbaru melalui media sosial kami:</p>
             <div class="d-flex icon">
               <a href="#">
-                <img
-                  src="https://seeklogo.com/images/Y/youtube-square-logo-3F9D037665-seeklogo.com.png"
-                  alt="YouTube"
-                />
+                <a href="#">
+                  <img
+                    src="https://cdn.punchng.com/wp-content/uploads/2023/07/24084806/Twitter-new-logo.jpeg"
+                    alt="X"
+                  />
+                </a>
               </a>
               <a href="#">
                 <img
@@ -235,9 +261,10 @@
     </footer>
 
     <script src="../theme.js"></script>
+    <script src="picture.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="main.js"></script>
+    <script src="destination.js"></script>
   </body>
 </html>

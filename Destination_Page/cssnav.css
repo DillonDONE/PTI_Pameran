@@ -90,6 +90,30 @@
   transition: transform 0.5s ease;
 }
 
+.caption {
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  color: white;
+  transform: translate(-50%, -50%);
+  margin: 0; 
+  padding: 0; 
+  z-index: 1;
+  animation: captAnimasi 1.5s; 
+}
+
+@keyframes captAnimasi {
+  0% {
+    transform: translate(-40%, -50%);
+    filter: opacity(0);
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+    filter: opacity(1);
+  }
+}
+
 .slide {
   min-width: 100%;
   height: auto;
@@ -304,6 +328,18 @@
   padding: 0;
 }
 
+.fotohorizontal {
+  width: 35rem;
+  height: 20rem;
+  border-radius: 5px;
+}
+
+.fotovertikal {
+  width: 15rem;
+  height: 20rem;
+  border-radius: 5px;
+}
+
 @media (max-width: 768px) {
   .sekat {
     flex: 0 0 100%;
@@ -312,10 +348,8 @@
 
 @media (max-width: 768px) {
   .icon {
-    display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     gap: 10px;
   }
 
@@ -331,5 +365,42 @@
   .map-container {
     margin-left: 0rem;
     margin-top: -4rem;
+  }
+
+  .fotohorizontal {
+    width: 100%;
+    height: 75%;
+  }
+
+  .fotovertikal {
+    width: 75%;
+    height: 100%;
+  }
+  
+  .caption {
+    margin-top: 20px;
+    font-size: medium;
+  }
+}
+
+@media (max-width: 375px) {
+  #judul {
+    font-size: small;
+  }
+
+  .caption {
+    font-size: 90%;
+    margin-top: 30%;
+  }
+}
+
+@media (max-width: 320px) {
+  #judul {
+    font-size: small;
+  }
+
+  .caption {
+    font-size: 90%;
+    margin-top: 30px;
   }
 }
