@@ -106,10 +106,6 @@
     z-index: 1000;
 }
 
-/* .navbar-item.active {
-    font-weight: bold;
-} */
-
 .logo {
     width: 6vh;
     height: 7vh;
@@ -153,9 +149,6 @@
     margin-top: 2rem;
     padding: 1rem;
     border-radius: 5px;
-}
-.box{
-    background-color: black;
 }
 
 .map-container {
