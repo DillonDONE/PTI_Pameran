@@ -453,7 +453,7 @@
     }
 }
 
-@media (min-width: 320px) {
+@media (max-width: 321px) {
     #map {
         width: 14rem;
         height: 15rem; 
@@ -461,12 +461,9 @@
         margin-top: 1rem;
     }
 
-    #judul {
-        font-size: 10px;
-    }
 }
 
-@media (min-width: 375px) {
+@media (max-width: 376px) {
     #map {
         width: 17.5rem;
         height: 15rem; 
