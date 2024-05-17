@@ -113,16 +113,6 @@ body {
     opacity: 1;
 }
 
-.light-mode .konten-hitam {
-    color: #000000;
-    background-color: #ffffff;
-}
-
-.dark-mode .konten-putih {
-    color: #ffffff;
-    background-color: #000000;
-}
-
 .box_bg {
     border-radius: 10px;
     padding: 20px;
