@@ -110,21 +110,23 @@
     }
   
     .arrow {
-      top: 35%;
+      top: 37.5%;
       transform: translateY(-50%);
-      font-size: 2rem;
+      font-size: 1.5rem;
       background: rgba(0, 0, 0, 0.5);
       color: white;
       border: none;
       cursor: pointer;
       z-index: 1;
+      padding-left: 5px;
+      padding-right: 5px;
     }
   
     .arrow.left {
-      left: 5px;
+      left: 2.5px;
     }
   
     .arrow.right {
-      right: 5px;
+      right: 2.5px;
     }
   }
