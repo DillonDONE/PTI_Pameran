@@ -185,3 +185,21 @@ body {
         font-size: 12px;
     }
 }
+
+@media (max-width: 320px) {
+    .wrapper {
+        width: 90%;
+    }
+    .gallary {
+        padding: 15px;
+    }
+    .gallary .gallary_image_box {
+        padding: 10px;
+    }
+    .text_box span {
+        font-size: 20px;
+    }
+    .text_box p {
+        font-size: 12px;
+    }
+}
