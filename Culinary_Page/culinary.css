@@ -1,6 +1,4 @@
-main{
-    background-color: whitesmoke;
-}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -101,16 +99,35 @@ main{
     }
 }
 
+/* @media (max-width: 375px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 10px; 
+        grid-gap: 10px;
+    }
+    .box {
+        width: calc(100% - 20px); 
+        height: auto; 
+        margin: 0 auto;
+    }
+    .container {
+        padding: 0 10px;
+    }
+    .h1 {
+        padding-top: 30px;
+    }
+    .icon a img {
+        height: 40px;
+        width: 40px;
+    }
+} */
+
 .navi {
     background: rgba(51, 49, 48, 0.3);
     position: fixed;
     width: 100%;
     z-index: 1000;
 }
-
-/* .navbar-item.active {
-    font-weight: bold;
-} */
 
 .logo {
     width: 6vh;
@@ -155,19 +172,6 @@ main{
     margin-top: 2rem;
     padding: 1rem;
     border-radius: 5px;
-}
-.box{
-    background-color: black;
-}
-
-.konten-putih {
-    background-color: white;
-    color: black;
-}
-
-.konten-hitam {
-    background-color: rgb(61, 61, 61);
-    color: white;
 }
 
 .map-container {
@@ -228,6 +232,38 @@ main{
     height: 50px;
     width: 50px;
 }
+
+.animasi1 {
+    animation: float1 1.5s;
+  }
+  
+  .animasi2 {
+    animation: float2 1.5s;
+  }
+  
+  @keyframes float1 {
+    0% {
+        transform: translateY(-3rem);
+        opacity: 0;
+    }
+  
+    100% {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+  }
+  
+  @keyframes float2 {
+    0% {
+        transform: translateY(3rem);
+        opacity: 0;
+    }
+  
+    100% {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+  }
 
 .icon a img:hover {
     filter: grayscale(0);

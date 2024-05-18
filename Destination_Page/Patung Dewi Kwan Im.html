@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kepulauan Bangka Belitung</title>
+    <title>Destinasi | Patung Dewi Kwan Im</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="cssnav.css" />
     <link rel="stylesheet" href="../theme.css" />
-    <link rel="stylesheet" href="CSS DESTINATION.css" />
+    <link rel="stylesheet" href="picture.css" />
   </head>
 
   <body class="light-mode">
@@ -19,7 +19,7 @@
         <div class="container">
           <a class="navbar-brand" href="../main.html">
             <img src="../About_Us/Pic/logo.png" width="40px" alt="Logo" />
-            <span id="judul"></span>
+            <span id="judul">PATUNG DEWI KWAN IM</span>
           </a>
           <button
             class="navbar-toggler"
@@ -95,13 +95,14 @@
       </nav>
     </header>
     <main>
-      <div class="slider-container">
+      <div class="slider-container animasi1">
         <div class="slider">
           <div class="slide">
             <img
-              src="../Destination_Page/Pic_Des/theme1.jpg"
+              src="../Destination_Page/Pic_Des/theme2.jpg"
               alt="Destination 1"
             />
+            <h2 class="caption">Patung Dewi Kwan Im</h2>
           </div>
           <div class="slide">
             <img
@@ -123,63 +124,89 @@
           </div>
         </div>
       </div>
-      <div class="header mt-0">
-        <h1>MUSEUM KATA ANDREA HIRATA</h1>
+
+      <div
+        class="konten"
+        style="margin-top: 1rem; text-align: right; margin-right: 1.5rem"
+      >
+        <h6 id="date" class="animasi2"></h6>
       </div>
 
-      <div class="container konten konten-putih">
-        <div class="gambar">
-          <img
-            src="../Destination_Page/Pic_Des/museum5.jpg"
-            alt="Pantai Lengkuas"
-          />
-        </div>
-        <article class="deskripsi">
-          <h2 style="text-align: center">TENTANG MUSEUM KATA ANDREA HIRATA</h2>
-          <p>
-            Pulau Lengkuas adalah salah sebuah pulau di Provinsi Kepulauan
-            Bangka Belitung. Letaknya di sebelah utara Pantai Tanjung Kelayang,
-            Kecamatan Sijuk, Kabupaten Belitung. Pulau ini merupakan satu dari
-            ratusan pulau yang mengelilingi Pulau Belitung. Daya tarik utama di
-            pulau ini adalah sebuah mercusuar tua yang dibangun oleh pemerintah
-            Kolonial Belanda pada tahun 1882. Hingga saat ini, mercusuar
-            tersebut masih berfungsi sebagai penuntun lalu lintas kapal yang
-            melewati atau keluar masuk Pulau Belitung.
-          </p>
-          <p>
-            Di Pulau Lengkuas, kamu akan menemukan batu granit yang megah, pasir
-            putih yang lembut, dan air laut yang begitu jernih. Pulau kecil ini
-            bisa dielilingi dalam waktu hanya 20 menit, dan kamu bisa
-            mengunjunginya dengan perahu sewaan dari Tanjung Binga atau Tanjung
-            Kelayang. Nikmati keindahan alamnya yang memikat dan kesegaran
-            udaranya yang menyegarkan.
-          </p>
-          <p>
-            Pulau ini merupakan surga bagi penggemar selancar permukaan dan
-            menyelam. Kamu bahkan bisa menemukan kapal karam Indomarine di
-            sekitar sini. Para penjaga mercusuar di pulau ini juga berperan
-            dalam pelestarian penyu hijau yang langka. Jadi, jangan lewatkan
-            kesempatan untuk menjelajahi keindahan bawah laut dan ikuti jejak
-            petualangan di Pulau ini.
-          </p>
-          <p>
-            Untuk menjaga kelestarian pulau ini, yuk kita jaga kebersihan
-            bersama! Saat berkunjung, pastikan kamu membawa air minum sendiri
-            dan membawa pulang semua sampah yang dihasilkan. Kita bisa membantu
-            menjaga lingkungan dengan tindakan sederhana ini, dan pastikan
-            sampah dibuang di tempat yang tepat saat kembali ke daratan Pulau
-            Belitung. Ayo bersama-sama jaga kebersihan dan keindahan alam pulau
-            ini.
-          </p>
-          <div class="d-flex justify-content-center frame">
+      <article
+        class="deskripsi container konten konten-putih animasi2"
+        style="padding: 3rem"
+      >
+        <h2 style="text-align: center">Patung Dewi Kwan Im</h2>
+        <br />
+        <div class="d-flex">
+          <div class="carousel">
+            <button class="arrow left" onclick="previousImage()">
+              &#10094;
+            </button>
+            <div class="carousel-inner">
+              <img src="./Pic_Des/Monumen2.jpg" class="active" />
+              <img
+                src="https://assets-a1.kompasiana.com/items/album/2023/06/25/snapedit-1687658894887-6497a1d108a8b54f530df552.png"
+              />
+              <img
+                src="https://lh5.googleusercontent.com/Jt5lwji5tM5TE6b8GINdc4zHjgPy09L9josAfGLrUpYnD3K-Ay1_GECcyTp1LOSeCHAz7gNjkLWdXvmYTSzytWVZnD4sw6kI7utUKnNzFnAhnQaRckBquT6gTlETeEWSeRdrRkU"
+              />
+              <img
+                src="https://www.pakettourbelitung.net/wp-content/uploads/2018/09/vihara-dewi-kwan-im-di-belitung-e1536769100872.jpg"
+              />
+              <img
+                src="https://indonesiakaya.com/wp-content/uploads/2020/10/3__Patung-patung_budha_yang_terdapat_di_salah_satu_tempat_sembahyang_yang_ada_di_Vihara_Dewi_Kwan_Im-1.jpg"
+              />
+            </div>
+            <button class="arrow right" onclick="nextImage()">&#10095;</button>
+          </div>
           <div class="map-container iframe-container">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255056.90484339112!2d107.33039969453124!3d-2.7378370000000043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e17166f33296ecd%3A0xf66ee9cabc2f0d14!2sKelenteng%20Kwan%20Im!5e0!3m2!1sid!2sid!4v1715713562795!5m2!1sid!2sid"
-              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1020217.9387869084!2d108.24647490216282!3d-2.749182230973854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e10c583a7c579a7%3A0x7781f96f5825f25c!2sGoddess%20Kwan%20Im%20Statue!5e0!3m2!1sid!2sid!4v1715996979828!5m2!1sid!2sid"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
-          <div id="player" class="iframe-container video-container"></div>
-        </article>
-      </div>
+        </div>
+        <br />
+        <p>
+          Vihara Buddhayana, yang lebih dikenal sebagai Vihara Dewi Kwan Im,
+          adalah sebuah tempat ibadah yang mempesona di Pulau Belitung. Dengan
+          arsitektur yang anggun dan detail seni Tionghoa yang memukau, vihara
+          ini menjadi bukti nyata harmonisasi antar umat beragama di Belitung
+          Timur. Selain menjadi tempat ibadah bagi umat Buddha, Vihara Dewi Kwan
+          Im juga menjadi simbol keberagaman budaya dan agama yang telah
+          berlangsung selama berabad-abad di masyarakat Belitung.
+        </p>
+        <p>
+          Vihara Dewi Kwan Im memiliki sejarah panjang yang mencakup lebih dari
+          250 tahun, menjadikannya salah satu vihara tertua dan terbesar di
+          Pulau Belitung. Dibutuhkan perjalanan menaiki sekitar 86 anak tangga
+          untuk mencapai vihara ini. Di dalam vihara, terdapat tiga tempat
+          sembahyang: Shimunyo, Sitiyamuni, dan Kon Im. Patung Dewi Kwan Im yang
+          megah, dengan tinggi mencapai 12 meter, menjadi daya tarik utama di
+          puncak vihara dan menjadi simbol keberadaan Dewi Kwan Im yang
+          dihormati dalam agama Buddha.
+        </p>
+        <center>
+          <img
+            src="https://wisato.id/wp-content/uploads/2019/10/vihara-dewi-kwam-im-bangka-belitung-1-scaled.jpg"
+            alt=""
+            class="fotohorizontal"
+          />
+        </center><br>
+        <p>
+          Selain sebagai tempat ibadah, Vihara Dewi Kwan Im juga menjadi daya
+          tarik wisata karena keindahan alam sekitarnya. Dari vihara ini,
+          pengunjung dapat menikmati panorama laut Pantai Burung Mandi yang
+          memukau. Kolam yang terletak di anak tangga yang terdapat di dalam
+          vihara diyakini dihuni oleh tujuh bidadari, dan pengunjung
+          diperbolehkan melempar koin sambil mengucapkan permohonan mereka.
+          Selain itu, pengunjung juga dapat meramal nasib melalui ramalan bambu
+          di dalam vihara.
+        </p>
+      </article>
     </main>
     <br /><br />
 
@@ -196,13 +223,15 @@
           </div>
           <div class="col-md-4">
             <h5 class="mb-4">Ikuti Kami</h5>
-            <p>Dapatkan update terbaru melalui media sosial kacmi:</p>
+            <p>Dapatkan update terbaru melalui media sosial kami:</p>
             <div class="d-flex icon">
               <a href="#">
-                <img
-                  src="https://seeklogo.com/images/Y/youtube-square-logo-3F9D037665-seeklogo.com.png"
-                  alt="YouTube"
-                />
+                <a href="#">
+                  <img
+                    src="https://cdn.punchng.com/wp-content/uploads/2023/07/24084806/Twitter-new-logo.jpeg"
+                    alt="X"
+                  />
+                </a>
               </a>
               <a href="#">
                 <img
@@ -235,9 +264,10 @@
     </footer>
 
     <script src="../theme.js"></script>
+    <script src="picture.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="main.js"></script>
+    <script src="destination.js"></script>
   </body>
 </html>

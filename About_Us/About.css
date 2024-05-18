@@ -1,3 +1,7 @@
+body {
+    background-color: whitesmoke;
+}
+
 .navi {
     background: rgba(51, 49, 48, 0.3);
     position: fixed;
@@ -6,6 +10,8 @@
 }
 
 .contain {
+    background-attachment: fixed;
+    position: relative;
     overflow: hidden;
     display: flex;
     scroll-snap-type: x mandatory;
@@ -16,8 +22,8 @@
 }
 
 .card1 {
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(38, 40, 62, 0.37);
+    background: rgba(255, 255, 255, 0.468);
+    box-shadow: 0 8px 32px 0 rgba(82, 83, 94, 0.571);
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
     border-radius: 10px;
@@ -61,7 +67,7 @@
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    background: #fff;
+    background: whitesmoke;
 }
 
 .card1 .card-image .card-img {
@@ -82,7 +88,7 @@
     margin: 0;
     padding: 10px;
     line-height: 1.5;
-    color: #000000;
+    color: #302f2f;
 }
 
 @media screen and (max-width: 900px) {
@@ -159,6 +165,7 @@
 .container {
     position: relative;
     width: 100%;
+    border-radius: 10px;
 }
 
 .slider-container {
@@ -227,9 +234,9 @@
 
 .biografi img {
     position: relative;
-    height: 250px;
-    width: 200px;
-    border-radius: 10%;
+    height: 200px;
+    width: 150px;
+    border-radius: 20%;
     background: #fff;
     padding: 3px;
 }
@@ -242,12 +249,12 @@
 }
 
 .bio1 {
-    padding-left: 20px;
+    padding-left: 10px;
     text-align: justify;
 }
 
 .bio {
-    padding-right: 20px;
+    padding-right: 10px;
     text-align: justify;
 }
 
@@ -265,22 +272,68 @@
 }
 
 @media (max-width: 768px) {
-    .contain {
-        flex-wrap: nowrap;
-        overflow-x: auto;
+    .biografi {
+        flex-direction: row;
+        align-items: center;
     }
 
-    .card1 {
-        width: 70%;
-        height: auto;
+    .profil img {
+        display: flex;
+    }
+
+    .biografi .profil {
+        flex: auto;
+        padding: 0px;
+    }
+
+    .bio1 {
+        width: 100%;
+        margin: auto;
+    }
+
+    .bio1 a,
+    .bio a {
+        text-align: center;
     }
 }
 
-@media (max-width: 768px) {
-    .biografi img {
-        height: auto;
-        width: 100%;
-        border-radius: 0;
+@media (max-width: 480px) {
+    .profil img {
+        display: flex;
+        align-items: center;
+        margin-left: -30px;
+    }
+
+    .profil1 img {
+        display: flex;
+        align-items: center;
+        margin-right: -30px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 1.5em;
+        padding: 20px 0;
+    }
+
+    .biografi .profil {
+        width: 120px;
+        margin: 0 auto 20px auto;
+    }
+
+    .bio1,
+    .bio {
+        align-items: center;
+        padding: -5px;
+    }
+
+    .bio1 p,
+    .bio p {
+        font-size: 0.9em;
     }
 }
 
