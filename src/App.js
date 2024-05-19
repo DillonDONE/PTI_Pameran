@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css'; // Impor file CSS Anda
 
-function About() {
+function About_Us() {
     return (
         <article className="container konten">
             <h1 style={{ padding: '35px 17px' }}>About Us</h1>
