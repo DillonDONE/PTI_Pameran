@@ -70,6 +70,23 @@ body {
     background: whitesmoke;
 }
 
+.ig {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.ig:hover {
+    color: black;
+    text-decoration: none;
+    opacity: 1;
+    transition: ease-in .1s;
+}
+
+.ig:not(:hover) {
+    transition: ease-in .1s;
+    opacity: 0.5;
+}
+
 .card1 .card-image .card-img {
     height: 100%;
     width: 100%;
