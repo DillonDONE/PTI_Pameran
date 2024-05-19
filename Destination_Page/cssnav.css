@@ -404,3 +404,7 @@
     margin-top: 30px;
   }
 }
+
+.destinasi {
+  transform: translateX(-10px);
+}
