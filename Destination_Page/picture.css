@@ -78,9 +78,6 @@
 }
 
 @media (max-width: 768px) {
-    .col-md-4 {
-      margin-bottom: 20px;
-    }
   
     .d-flexmap {
       flex-direction: column;
