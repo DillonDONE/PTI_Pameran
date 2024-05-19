@@ -202,9 +202,7 @@
 }
 
 .icon {
-  text-align: center;
   justify-content: center;
-  align-items: center;
 }
 
 .icon a img {
@@ -348,19 +346,21 @@
 
 @media (max-width: 768px) {
   .icon {
+    display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
   }
 
   .icon a img {
-    height: 40px;
-    width: 40px;
+      height: 40px;
+      width: 40px;
   }
 
-  .col-md-4 {
+.col-md-4 {
     margin-bottom: 20px;
-  }
+}
 
   .map-container {
     margin-left: 0rem;
@@ -403,4 +403,8 @@
     font-size: 90%;
     margin-top: 30px;
   }
+}
+
+.destinasi {
+  transform: translateX(-10px);
 }

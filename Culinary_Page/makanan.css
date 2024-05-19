@@ -63,6 +63,21 @@ body {
     overflow: hidden;
 }
 
+h4{
+    margin-left: 2px;
+}
+
+ul li{
+    margin-left: 20px;
+}
+ul ul{
+    margin-left: 20px;
+}
+
+ol{
+    margin-left: 20px;
+}
+
 .gallary .gallary_image_box .gallary_image img {
     width: 100%;
     transition: 0.3s;
@@ -193,7 +208,10 @@ body {
 
 @media (max-width: 320px) {
     .wrapper {
-        width: 90%;
+        width: 100%;
+    }
+    .imeg{
+        width: 100%;
     }
     .gallary {
         padding: 15px;
