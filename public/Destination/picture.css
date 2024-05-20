@@ -3,6 +3,7 @@
   width: 100%;
   overflow: hidden;
   background-color: transparent;
+  border-radius: 5px;
 }
 
 .carousel img {

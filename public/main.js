@@ -94,7 +94,7 @@ function onYouTubeIframeAPIReady() {
     width: "500",
     videoId: VIDEO_ID,
     playerlets: {
-      autoplay: 1,
+      autoplay: 0,
       controls: 1,
       showinfo: 0,
       rel: 0,
