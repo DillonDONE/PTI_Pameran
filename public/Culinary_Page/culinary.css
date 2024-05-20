@@ -387,6 +387,10 @@
     .sekat {
         flex: 0 0 100%;
     }
+
+    #judul {
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -405,9 +409,5 @@
 
     .col-md-4 {
         margin-bottom: 20px;
-    }
-
-    #judul {
-        font-size: 13px;
     }
 }
