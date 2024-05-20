@@ -47,25 +47,25 @@
 
 @keyframes float1 {
   0% {
-      transform: translateY(-3rem);
-      opacity: 0;
+    transform: translateY(-3rem);
+    opacity: 0;
   }
 
   100% {
-      transform: translateY(0rem);
-      opacity: 1;
+    transform: translateY(0rem);
+    opacity: 1;
   }
 }
 
 @keyframes float2 {
   0% {
-      transform: translateY(3rem);
-      opacity: 0;
+    transform: translateY(3rem);
+    opacity: 0;
   }
 
   100% {
-      transform: translateY(0rem);
-      opacity: 1;
+    transform: translateY(0rem);
+    opacity: 1;
   }
 }
 
@@ -87,8 +87,8 @@
 
 #map {
   width: 50rem;
-  height: 17rem; 
-  border: 1px solid #ddd; 
+  height: 17rem;
+  border: 1px solid #ddd;
   margin-top: 1rem;
   margin-right: 1rem;
   padding: 2rem;
@@ -125,7 +125,6 @@
   color: rgb(255, 255, 255);
   text-align: center;
   filter: opacity(0);
-
 }
 
 .capt:hover {
@@ -134,7 +133,7 @@
 
 @media (max-width: 768px) {
   .boxrekom {
-      padding: 2rem;
+    padding: 2rem;
   }
 }
 
@@ -151,22 +150,20 @@
   border: 2px solid;
 }
 
-
 #rek1 {
-  background-image: url("../Destination_Page/Pic_Des/pantai1.jpeg");
+  background-image: url("../public/Destination/Pic_Des/pantai1.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #rek1:hover {
-  transition: ease-in-out .2s;
+  transition: ease-in-out 0.2s;
 }
 
 #rek1:not(:hover) {
-  transition: ease-in-out .2s;
+  transition: ease-in-out 0.2s;
 }
-
 
 #rek2 {
   background-image: url("https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/akuratco/855620214402.jpg");
@@ -176,27 +173,26 @@
 }
 
 #rek2:hover {
-  transition: ease-in-out .2s;
+  transition: ease-in-out 0.2s;
 }
 
 #rek2:not(:hover) {
-  transition: ease-in-out .2s;
+  transition: ease-in-out 0.2s;
 }
 
-
 #rek3 {
-  background-image: url("../Destination_Page/Pic_Des/Pantai\ 3.jpg");
+  background-image: url("../public/Destination/Pic_Des/Pantai\ 3.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #rek3:hover {
-  transition: ease-in-out .2s;
+  transition: ease-in-out 0.2s;
 }
 
 #rek3:not(:hover) {
-  transition: ease-in-out .2s;
+  transition: ease-in-out 0.2s;
 }
 
 #rekmak1 {
@@ -207,13 +203,12 @@
 }
 
 #rekmak1:hover {
-  transition: ease-in-out .2s;
+  transition: ease-in-out 0.2s;
 }
 
 #rekmak1:not(:hover) {
-  transition: ease-in-out .2s;
+  transition: ease-in-out 0.2s;
 }
-
 
 #rekmak2 {
   background-image: url("https://nibble-images.b-cdn.net/nibble/original_images/Mie-bangka-pesona-travel.jpg");
@@ -223,13 +218,12 @@
 }
 
 #rekmak2:hover {
-  transition: ease-in-out .2s;
+  transition: ease-in-out 0.2s;
 }
 
 #rekmak2:not(:hover) {
-  transition: ease-in-out .2s;
+  transition: ease-in-out 0.2s;
 }
-
 
 #rekmak3 {
   background-image: url("https://cdn0-production-images-kly.akamaized.net/wbtA9GCQOxgLBotzLR0Nvf8YcZE=/0x394:775x831/500x281/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3278052/original/067397600_1603686134-shutterstock_1819632680.jpg");
@@ -239,11 +233,11 @@
 }
 
 #rekmak3:hover {
-  transition: ease-in-out .2s;
+  transition: ease-in-out 0.2s;
 }
 
 #rekmak3:not(:hover) {
-  transition: ease-in-out .2s;
+  transition: ease-in-out 0.2s;
 }
 
 #kaki {
@@ -282,13 +276,13 @@
 .icon a img:hover {
   filter: grayscale(0);
   transform: scale(1.1);
-  transition: ease-in .1s;
+  transition: ease-in 0.1s;
 }
 
 .icon a img:not(:hover) {
   filter: grayscale(1);
   transform: scale(1);
-  transition: ease-in .1s;
+  transition: ease-in 0.1s;
 }
 
 .card-info {
@@ -316,12 +310,12 @@
 
 .card:hover {
   transform: translateY(5%);
-  transition: ease-in .3s;
+  transition: ease-in 0.3s;
 }
 
 .card:not(:hover) {
   transform: translateY(0%);
-  transition: ease-in .3s;
+  transition: ease-in 0.3s;
 }
 
 .card:hover:before {
@@ -387,91 +381,88 @@
 
 @media (max-width: 768px) {
   .frame {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .map-container,
   #player {
-      width: 100%;
-      height: 300px;
+    width: 100%;
+    height: 300px;
   }
 
   .map-container iframe,
   #player iframe {
-      width: 100%;
-      height: 100%;
+    width: 100%;
+    height: 100%;
   }
 
   .icon {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
   .icon a img {
-      height: 40px;
-      width: 40px;
+    height: 40px;
+    width: 40px;
   }
 
   .col-md-4 {
-      margin-bottom: 20px;
+    margin-bottom: 20px;
   }
 
-    #ibu {
-      font-size: smaller;
-    }
+  #ibu {
+    font-size: smaller;
+  }
 }
 
-
 @media (max-width: 768px) {
-
   .map-container {
-      margin-bottom: 20px;
+    margin-bottom: 20px;
   }
 
   #player {
-      margin-top: 20px;
+    margin-top: 20px;
   }
 
   #map {
-      width: 100%;
-      height: 15rem; 
-      border: 1px solid #ddd; 
-      margin-top: 1rem;
+    width: 100%;
+    height: 15rem;
+    border: 1px solid #ddd;
+    margin-top: 1rem;
   }
 
   #judul {
-      font-size: 15px;
+    font-size: 15px;
   }
 }
 
 @media (max-width: 768px) {
   .sekat {
-      flex: 0 0 100%;
+    flex: 0 0 100%;
   }
 }
 
 @media (max-width: 375px) {
   #map {
-      width: 100%;
-      height: 15rem; 
-      border: 1px solid #ddd; 
-      margin-top: 1rem;
+    width: 100%;
+    height: 15rem;
+    border: 1px solid #ddd;
+    margin-top: 1rem;
   }
 
   #judul {
-      font-size: 10px;
+    font-size: 10px;
   }
 }
 
 @media (max-width: 320px) {
   #map {
-      width: 100%;
-      height: 15rem; 
-      border: 1px solid #ddd; 
-      margin-top: 1rem;
+    width: 100%;
+    height: 15rem;
+    border: 1px solid #ddd;
+    margin-top: 1rem;
   }
-
 }
