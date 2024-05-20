@@ -1,6 +1,6 @@
 //Slide photo
-const slider = document.querySelector(".slider");
-const slides = document.querySelectorAll(".slide");
+const slider = document.querySelector('.slider');
+const slides = document.querySelectorAll('.slide');
 
 let currentIndex = 0;
 let slideWidth = slides[currentIndex].clientWidth;
@@ -11,7 +11,7 @@ function updateSlideWidth() {
 
 function nextSlide() {
   currentIndex = (currentIndex + 1) % slides.length;
-  updateSlideWidth();
+  updateSlideWidth(); 
   updateSlider();
 }
 
@@ -20,8 +20,7 @@ function updateSlider() {
   slider.style.transform = `translateX(${offset}px)`;
 }
 
-setInterval(nextSlide, 5000);
-
+setInterval(nextSlide, 2000); 
 //API List
 //Time API
 let time;
