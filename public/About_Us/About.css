@@ -9,6 +9,10 @@ body {
     z-index: 1000;
 }
 
+#judul {
+    font-family: 'Times New Roman', Times, serif;
+}
+
 #plex {
     width: 100%;
     display: flex

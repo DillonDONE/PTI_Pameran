@@ -5,6 +5,10 @@
   z-index: 1000;
 }
 
+#judul {
+  font-family: 'Times New Roman', Times, serif;
+}
+
 .navbar-item.active {
   font-weight: bold;
 }
@@ -91,15 +95,15 @@
 }
 
 .caption {
-  position: absolute; 
-  top: 50%; 
-  left: 50%; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
   color: white;
   transform: translate(-50%, -50%);
-  margin: 0; 
-  padding: 0; 
+  margin: 0;
+  padding: 0;
   z-index: 1;
-  animation: captAnimasi 1.5s; 
+  animation: captAnimasi 1.5s;
 }
 
 @keyframes captAnimasi {
@@ -354,13 +358,13 @@
   }
 
   .icon a img {
-      height: 40px;
-      width: 40px;
+    height: 40px;
+    width: 40px;
   }
 
-.col-md-4 {
+  .col-md-4 {
     margin-bottom: 20px;
-}
+  }
 
   .map-container {
     margin-left: 0rem;
@@ -376,7 +380,7 @@
     width: 75%;
     height: 100%;
   }
-  
+
   .caption {
     margin-top: 20px;
     font-size: medium;
