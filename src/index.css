@@ -1,13 +1,477 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.navi {
+  background: rgba(51, 49, 48, 0.3);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar-item.active {
+  font-weight: bold;
+}
+
+.logo {
+  width: 6vh;
+  height: 7vh;
+}
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding-top: 33.9%;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.animasi1 {
+  animation: float1 1s;
+}
+
+.animasi2 {
+  animation: float2 1s;
+}
+
+@keyframes float1 {
+  0% {
+      transform: translateY(-3rem);
+      opacity: 0;
+  }
+
+  100% {
+      transform: translateY(0rem);
+      opacity: 1;
+  }
+}
+
+@keyframes float2 {
+  0% {
+      transform: translateY(3rem);
+      opacity: 0;
+  }
+
+  100% {
+      transform: translateY(0rem);
+      opacity: 1;
+  }
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.konten {
+  margin-top: 2rem;
+  padding: 3rem;
+  border-radius: 5px;
+}
+
+.konten div {
+  text-align: justify;
+}
+
+#map {
+  width: 50rem;
+  height: 17rem; 
+  border: 1px solid #ddd; 
+  margin-top: 1rem;
+  margin-right: 1rem;
+  padding: 2rem;
+  top: 0;
+  left: 0;
+}
+
+#player {
+  position: relative;
+  width: 100%;
+}
+
+#player iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.boxrekom {
+  border-radius: 5px;
+  padding: 4rem;
+  margin: 12px;
+  cursor: pointer;
+}
+
+.boxrekom:hover {
+  transform: scale(1.1);
+  filter: blur(1px);
+}
+
+.capt {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  filter: opacity(0);
+
+}
+
+.capt:hover {
+  filter: opacity(1);
+}
+
+@media (max-width: 768px) {
+  .boxrekom {
+      padding: 2rem;
+  }
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.teks {
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+  color: black;
+  border: 2px solid;
+}
+
+
+#rek1 {
+  background-image: url("../Destination_Page/Pic_Des/pantai1.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#rek1:hover {
+  transition: ease-in-out .2s;
+}
+
+#rek1:not(:hover) {
+  transition: ease-in-out .2s;
+}
+
+
+#rek2 {
+  background-image: url("https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/akuratco/855620214402.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#rek2:hover {
+  transition: ease-in-out .2s;
+}
+
+#rek2:not(:hover) {
+  transition: ease-in-out .2s;
+}
+
+
+#rek3 {
+  background-image: url("../Destination_Page/Pic_Des/Pantai\ 3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#rek3:hover {
+  transition: ease-in-out .2s;
+}
+
+#rek3:not(:hover) {
+  transition: ease-in-out .2s;
+}
+
+#rekmak1 {
+  background-image: url("https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/p1/103/2024/01/24/lempah-Kuning-Khas-Bangka-Belitung-629108236.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#rekmak1:hover {
+  transition: ease-in-out .2s;
+}
+
+#rekmak1:not(:hover) {
+  transition: ease-in-out .2s;
+}
+
+
+#rekmak2 {
+  background-image: url("https://nibble-images.b-cdn.net/nibble/original_images/Mie-bangka-pesona-travel.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#rekmak2:hover {
+  transition: ease-in-out .2s;
+}
+
+#rekmak2:not(:hover) {
+  transition: ease-in-out .2s;
+}
+
+
+#rekmak3 {
+  background-image: url("https://cdn0-production-images-kly.akamaized.net/wbtA9GCQOxgLBotzLR0Nvf8YcZE=/0x394:775x831/500x281/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3278052/original/067397600_1603686134-shutterstock_1819632680.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#rekmak3:hover {
+  transition: ease-in-out .2s;
+}
+
+#rekmak3:not(:hover) {
+  transition: ease-in-out .2s;
+}
+
+#kaki {
+  background-color: grey;
+  align-items: center;
+  text-align: center;
+  padding-top: 15px;
+}
+
+#copy {
+  background-color: rgb(49, 48, 48);
+  color: white;
+  font-weight: 75;
+  text-align: center;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+#kaki div a {
+  padding-left: 10px;
+}
+
+.icon {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon a img {
+  filter: grayscale(1);
+  border-radius: 30px;
+  height: 50px;
+  width: 50px;
+}
+
+.icon a img:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+  transition: ease-in .1s;
+}
+
+.icon a img:not(:hover) {
+  filter: grayscale(1);
+  transform: scale(1);
+  transition: ease-in .1s;
+}
+
+.card-info {
+  position: absolute;
+  z-index: 3;
+  color: transparent;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.text-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  color: aliceblue;
+}
+
+.text-body {
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  margin: 5px 0 15px 0;
+}
+
+.card:hover {
+  transform: translateY(5%);
+  transition: ease-in .3s;
+}
+
+.card:not(:hover) {
+  transform: translateY(0%);
+  transition: ease-in .3s;
+}
+
+.card:hover:before {
+  opacity: 1;
+}
+
+.card:hover .card-info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.kartu {
+  flex-wrap: wrap;
+}
+
+.sekat {
+  margin: 1rem;
+  flex: 0 0 30%;
+}
+
+.card {
+  position: relative;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: transparent;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.text-title {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.iframe-container iframe,
+.video-container iframe {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .frame {
+      flex-direction: column;
+  }
+
+  .map-container,
+  #player {
+      width: 100%;
+      height: 300px;
+  }
+
+  .map-container iframe,
+  #player iframe {
+      width: 100%;
+      height: 100%;
+  }
+
+  .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  
+  .icon a img {
+      height: 40px;
+      width: 40px;
+  }
+
+  .col-md-4 {
+      margin-bottom: 20px;
+  }
+
+    #ibu {
+      font-size: smaller;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+  .map-container {
+      margin-bottom: 20px;
+  }
+
+  #player {
+      margin-top: 20px;
+  }
+
+  #map {
+      width: 100%;
+      height: 15rem; 
+      border: 1px solid #ddd; 
+      margin-top: 1rem;
+  }
+
+  #judul {
+      font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sekat {
+      flex: 0 0 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  #map {
+      width: 100%;
+      height: 15rem; 
+      border: 1px solid #ddd; 
+      margin-top: 1rem;
+  }
+
+  #judul {
+      font-size: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  #map {
+      width: 100%;
+      height: 15rem; 
+      border: 1px solid #ddd; 
+      margin-top: 1rem;
+  }
+
 }
