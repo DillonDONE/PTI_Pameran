@@ -443,6 +443,10 @@
   .sekat {
     flex: 0 0 100%;
   }
+
+  .konten {
+    margin: auto;
+  }
 }
 
 @media (max-width: 375px) {
