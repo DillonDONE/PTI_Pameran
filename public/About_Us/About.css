@@ -13,6 +13,13 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
+.logoProject {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+}
+
 #plex {
     width: 100%;
     display: flex
