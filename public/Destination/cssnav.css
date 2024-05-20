@@ -265,6 +265,7 @@
   left: 0;
   width: 100%;
   border: 0;
+  border-radius: 5px;
 }
 
 .text-body {
