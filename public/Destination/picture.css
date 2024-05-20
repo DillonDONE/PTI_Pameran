@@ -3,12 +3,12 @@
   width: 100%;
   overflow: hidden;
   background-color: transparent;
-  border-radius: 5px;
 }
 
 .carousel img {
   width: 100%;
   flex-shrink: 0;
+  border-radius: 5px;
 }
 .carousel img.active {
   display: block;
