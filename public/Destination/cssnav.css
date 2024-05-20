@@ -387,6 +387,10 @@
     margin-top: 20px;
     font-size: medium;
   }
+
+  #judul {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 375px) {
