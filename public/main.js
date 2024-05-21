@@ -42,40 +42,39 @@ let ibuKota;
 fetch(`https://www.emsifa.com/api-wilayah-indonesia/api/regencies/19.json`)
   .then((response) => response.json())
   .then((capital) => {
-  ibuKota = capital;
-  console.log(capital);
-  let ganti = document.getElementById("ibu");
-  let nama = ibuKota[6].name;
-  ganti.innerHTML = `${nama}`;
-});
+    ibuKota = capital;
+    console.log(capital);
+    let ganti = document.getElementById("ibu");
+    let nama = ibuKota[6].name;
+    ganti.innerHTML = `${nama}`;
+  });
 
 //API Maps
 let map;
 
-      async function initMap() {
-        const position = { lat: -2.631577754860956, lng: 106.44616126487077 };
-        const { Map } = await google.maps.importLibrary("maps");
-        const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
-        map = new Map(document.getElementById("map"), {
-          zoom: 7,
-          center: position,
-          mapId: "DEMO_MAP_ID",
-        });
+async function initMap() {
+  const position = { lat: -2.631577754860956, lng: 106.44616126487077 };
+  const { Map } = await google.maps.importLibrary("maps");
+  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+  map = new Map(document.getElementById("map"), {
+    zoom: 7,
+    center: position,
+    mapId: "DEMO_MAP_ID",
+  });
 
-        const marker = new AdvancedMarkerElement({
-          map: map,
-          position: position,
-          title: "Lengkuas Island",
-        });
+  const marker = new AdvancedMarkerElement({
+    map: map,
+    position: position,
+    title: "Lengkuas Island",
+  });
 
-        marker.addListener("click", () => {
-          const url = `https://www.google.com/maps/dir/?api=1&destination=${position.lat},${position.lng}`;
-          window.open(url, '_blank');
-        });
-      }
+  marker.addListener("click", () => {
+    const url = `https://www.google.com/maps/dir/?api=1&destination=${position.lat},${position.lng}`;
+    window.open(url, "_blank");
+  });
+}
 
-      initMap();
-
+initMap();
 
 //API Youtube Video
 let API_KEY = "AIzaSyDKqZym98vyfQ_2tvmUtQV5xJAoTpDDUn0";
@@ -112,29 +111,31 @@ function onPlayerReady(event) {
 
 //Time API
 let time;
-let tgl = "";
 
 fetch("http://worldtimeapi.org/api/ip")
   .then((response) => response.json())
   .then((waktu) => {
-  time = waktu;
-  console.log(time);
-  for(let x = 0; x < 10; x++){
-    tgl += time.datetime[x];
-  }
-  document.getElementById('date').innerHTML = tgl;
-});
+    time = waktu;
+    console.log(time);
+    let tgl = "";
+    for (let x = 0; x < 10; x++) {
+      tgl += time.datetime[x];
+    }
+    document.getElementById("date").innerHTML = tgl;
+  });
 
 //Font API
-fetch("https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyCQu3hOsmx94omGUHSdWMGr6-DtjYNKDA0")
+fetch(
+  "https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyCQu3hOsmx94omGUHSdWMGr6-DtjYNKDA0"
+)
   .then((response) => response.json())
   .then((fontsData) => {
     const fonts = fontsData.items.map((item) => item.family);
-    const selectedFont = fonts[0]; 
-    document.getElementById('judul').style.fontFamily = selectedFont;
+    const selectedFont = fonts[0];
+    document.getElementById("judul").style.fontFamily = selectedFont;
   })
   .catch((error) => {
     console.error("Error fetching fonts:", error);
-});
+  });
 
 //End of API List
