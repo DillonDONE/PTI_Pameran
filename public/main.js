@@ -112,13 +112,13 @@ function onPlayerReady(event) {
 
 //Time API
 let time;
+let tgl = "";
 
 fetch("http://worldtimeapi.org/api/ip")
   .then((response) => response.json())
   .then((waktu) => {
   time = waktu;
   console.log(time);
-  let tgl = "";
   for(let x = 0; x < 10; x++){
     tgl += time.datetime[x];
   }
