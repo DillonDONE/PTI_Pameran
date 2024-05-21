@@ -114,7 +114,7 @@ function onPlayerReady(event) {
 let time;
 
 
-fetch("http://worldtimeapi.org/api/ip")
+fetch("http://worldtimeapi.org/api/timezone/Asia/Indonesia/Jakarta")
   .then((response) => response.json())
   .then((waktu) => {
   time = waktu;
