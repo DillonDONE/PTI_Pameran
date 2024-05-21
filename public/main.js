@@ -111,18 +111,18 @@ function onPlayerReady(event) {
 
 //Time API
 let time;
-let tgl = "";
 
 fetch("https://worldtimeapi.org/api/ip")
   .then((response) => response.json())
   .then((waktu) => {
-  time = waktu;
-  console.log(time);
-  for(let x = 0; x < 10; x++){
-    tgl += time.datetime[x];
-  }
-  document.getElementById('date').innerHTML = tgl;
-});
+    time = waktu;
+    console.log(time);
+    let tgl = "";
+    for (let x = 0; x < 10; x++) {
+      tgl += time.datetime[x];
+    }
+    document.getElementById("date").innerHTML = tgl;
+  });
 
 //Font API
 fetch(
